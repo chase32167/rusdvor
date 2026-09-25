@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0c211a">
+<title>Копейка Петра I — коллекционная медаль | Русский Монетный Двор</title>
+<meta name="description" content="Коллекционная медаль «Копейка Петра I»: двуглавый орёл под тремя коронами и старинная надпись «КОПЕИКА». Оплата при получении.">
+<link rel="preload" href="assets/kopeyka-face-avers.webp" as="image">
+<link rel="preload" href="assets/fonts/old-standard-tt-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* ─── Шрифты: Old Standard TT — в духе русского наборного шрифта, Golos Text — для чтения ─── */
+@font-face { font-family: 'Old Standard TT'; font-weight: 400; font-display: swap; src: url(assets/fonts/old-standard-tt-cyrillic-400-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: 'Old Standard TT'; font-weight: 400; font-display: swap; src: url(assets/fonts/old-standard-tt-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F, U+20BD, U+2212 }
+@font-face { font-family: 'Old Standard TT'; font-weight: 400; font-style: italic; font-display: swap; src: url(assets/fonts/old-standard-tt-cyrillic-400-italic.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: 'Old Standard TT'; font-weight: 400; font-style: italic; font-display: swap; src: url(assets/fonts/old-standard-tt-latin-400-italic.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F, U+20BD, U+2212 }
+@font-face { font-family: 'Old Standard TT'; font-weight: 700; font-display: swap; src: url(assets/fonts/old-standard-tt-cyrillic-700-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: 'Old Standard TT'; font-weight: 700; font-display: swap; src: url(assets/fonts/old-standard-tt-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F, U+20BD, U+2212 }
+@font-face { font-family: 'Golos Text'; font-weight: 400; font-display: swap; src: url(assets/fonts/golos-text-cyrillic-400-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: 'Golos Text'; font-weight: 400; font-display: swap; src: url(assets/fonts/golos-text-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F, U+20BD, U+2212 }
+@font-face { font-family: 'Golos Text'; font-weight: 600; font-display: swap; src: url(assets/fonts/golos-text-cyrillic-600-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: 'Golos Text'; font-weight: 600; font-display: swap; src: url(assets/fonts/golos-text-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F, U+20BD, U+2212 }
+@font-face { font-family: 'Golos Text'; font-weight: 700; font-display: swap; src: url(assets/fonts/golos-text-cyrillic-700-normal.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: 'Golos Text'; font-weight: 700; font-display: swap; src: url(assets/fonts/golos-text-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F, U+20BD, U+2212 }
+
+/* ─── Палитра «Преображенская»: гвардейский зелёный, золото, пергамент, киноварь ─── */
+:root {
+  --g-950: #081812;
+  --g-900: #0c211a;
+  --g-800: #112c22;
+  --g-700: #17392c;
+  --g-600: #1f4838;
+  --gold: #d6b26b;
+  --gold-hi: #f1dba1;
+  --gold-lo: #9d7b3d;
+  --gline: rgba(214,178,107,.28);
+  --gline-2: rgba(214,178,107,.5);
+  --text: #efe7d2;
+  --text-2: #cfc6ab;
+  --muted: #a3ad9c;
+
+  --parch: #f4ecd8;
+  --parch-2: #e9dcbd;
+  --parch-edge: #cbb68a;
+  --ink: #261c10;
+  --ink-2: #4b3c28;
+  --ink-3: #6e5d44;
+  --field: #8c7a5c;
+  --cinnabar: #a8281d;
+  --crimson: #9b092d;
+  --crimson-hi: #b5112f;
+  --err: #b3261e;
+  --err-bg: #fbece8;
+  --ok: #22663e;
+  --ok-bg: #e3efe3;
+
+  --display: 'Old Standard TT', Georgia, 'Times New Roman', serif;
+  --sans: 'Golos Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  --wrap: 1200px;
+  --gutter: 16px;
+  --r: 8px;
+  --D: 300px;           /* диаметр медали */
+  color-scheme: dark;
+}
+@media (min-width: 768px) { :root { --gutter: 32px } }
+@media (min-width: 1024px) { :root { --D: min(440px, 32vw) } }
+
+*, *::before, *::after { box-sizing: border-box }
+[hidden] { display: none !important }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100% }
+body { margin: 0; font: 400 18px/1.6 var(--sans); color: var(--text); background: var(--g-900); -webkit-font-smoothing: antialiased; overflow-x: clip }
+body.has-dock { padding-bottom: var(--dock-h, 88px) }
+h1, h2, h3, p, ul, ol, dl, figure, blockquote { margin: 0 }
+ul, ol { padding: 0; list-style: none }
+img, svg { display: block; max-width: 100% }
+img { height: auto }
+a { color: var(--gold) }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 3px solid var(--gold-hi); outline-offset: 3px }
+[tabindex="-1"]:focus { outline: none }
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
+.wrap { width: 100%; max-width: calc(var(--wrap) + var(--gutter) * 2); margin: 0 auto; padding: 0 var(--gutter) }
+.nowrap { white-space: nowrap }
+.tbd { font-style: italic; opacity: .75 }
+
+.kicker { display: inline-flex; align-items: center; gap: 10px; font: 600 14px/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--gold) }
+.kicker::before, .kicker--c::after { content: ""; width: 26px; height: 1px; background: currentColor; opacity: .7 }
+.title { font: 700 40px/1.05 var(--display); color: var(--text); text-wrap: balance }
+.title i { font-weight: 400; color: var(--gold-hi) }
+@media (min-width: 1024px) { .title { font-size: 58px } }
+.lead { font-size: 19px; line-height: 1.6; color: var(--text-2) }
+
+/* Пергамент */
+.parch {
+  color: var(--ink); border-radius: 4px;
+  background:
+    radial-gradient(130% 90% at 50% 35%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(90% 70% at 50% 110%, rgba(170,130,60,.18), transparent 70%),
+    linear-gradient(180deg, #f6eedb, #efe3c6);
+  box-shadow: 0 0 0 1px var(--parch-edge), 0 0 0 6px rgba(244,236,216,.06), 0 30px 70px rgba(0,0,0,.45);
+}
+.parch .title { color: var(--ink) }
+.parch .title i { color: var(--cinnabar) }
+
+.link { display: inline; padding: 0; border: 0; background: none; cursor: pointer; color: var(--gold); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; font: inherit }
+.link:hover { color: var(--gold-hi) }
+.parch .link, .modal .link { color: var(--crimson) }
+.link--tap { display: inline-flex; align-items: center; min-height: 44px }
+.check .link, .alert a { padding: 14px 0; margin: -14px 0 }
+
+/* ─── Кнопки ───────────────────────────────────────────────────────── */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 58px; padding: 12px 28px; border: 0; border-radius: var(--r); font: 700 19px/1.2 var(--sans); text-align: center; text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: filter .15s, transform .08s, background-color .15s }
+.btn:active { transform: translateY(1px) }
+.btn--block { width: 100% }
+.btn--gold { background: linear-gradient(180deg, #f5e2ad, #d9b56d 55%, #c29a52); color: #1c1407; box-shadow: inset 0 1px 0 rgba(255,255,255,.55), inset 0 -2px 0 rgba(110,75,25,.35), 0 12px 30px rgba(0,0,0,.35) }
+.btn--gold:hover { filter: brightness(1.06) }
+.btn--red { background: var(--crimson); color: #fff; box-shadow: inset 0 -2px 0 rgba(0,0,0,.25) }
+.btn--red:hover { background: var(--crimson-hi) }
+/* «Нет, спасибо» — сплошная, того же размера и веса, что и «Да» */
+.btn--green { background: var(--g-700); color: #fff; box-shadow: inset 0 -2px 0 rgba(0,0,0,.3) }
+.btn--green:hover { background: var(--g-600) }
+.btn--parch { background: var(--parch); color: var(--ink); box-shadow: inset 0 -2px 0 rgba(90,70,40,.2) }
+.btn--parch:hover { background: #fbf5e6 }
+.btn--line { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1.5px var(--gline-2) }
+.btn--line:hover { box-shadow: inset 0 0 0 1.5px var(--gold) }
+.parch .btn--line, .modal .btn--line { color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink-2) }
+.btn--sm { min-height: 44px; padding: 8px 18px; font-size: 16px }
+.btn[disabled] { cursor: progress; filter: saturate(.35) brightness(.9); transform: none }
+.btn svg { width: 20px; height: 20px }
+.spinner { width: 20px; height: 20px; flex: 0 0 20px; border-radius: 50%; border: 3px solid rgba(255,255,255,.35); border-top-color: #fff; animation: spin .8s linear infinite }
+@keyframes spin { to { transform: rotate(360deg) } }
+
+/* ─── Шапка / cookie / прогресс ───────────────────────────────────── */
+.top { position: relative; z-index: 20; background: var(--g-950) }
+.hdr { border-bottom: 1px solid var(--gline) }
+.hdr__in { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 64px }
+.logo { display: flex; align-items: center; gap: 10px; color: var(--text); flex-shrink: 0 }
+.logo img { width: 36px; height: 33px }
+.logo__text { font: 700 15px/1.1 var(--display) }
+.hdr__tel { display: flex; align-items: center; gap: 10px; min-height: 44px; color: var(--text); text-decoration: none; text-align: right }
+.hdr__tel svg { width: 20px; height: 20px; color: var(--gold); flex-shrink: 0 }
+.hdr__num { display: block; font: 700 17px/1.2 var(--sans); white-space: nowrap }
+.hdr__sub { display: block; font-size: 13px; color: var(--muted); line-height: 1.2 }
+@media (max-width: 380px) { .hdr__tel svg { display: none } .logo__text { font-size: 14px } .hdr__num { font-size: 16px } }
+@media (min-width: 1024px) { .hdr__in { min-height: 76px } .logo img { width: 42px; height: 38px } .logo__text { font-size: 18px } .hdr__num { font-size: 22px } .hdr__sub { font-size: 14px } }
+
+.cookie { background: var(--g-800); border-bottom: 1px solid var(--gline); font-size: 14px; line-height: 1.4; color: var(--text-2) }
+.cookie__in { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 6px; padding-bottom: 6px }
+.cookie__in p { flex: 1 1 auto; min-width: 0 }
+.cookie .link { display: inline-flex; align-items: center; min-height: 44px; vertical-align: middle }
+
+.progress { padding: 12px 0; border-bottom: 1px solid var(--gline) }
+.progress__row { display: flex; align-items: center; gap: 18px }
+.progress__note { flex: 0 0 auto; font-size: 14px; color: var(--text-2); white-space: nowrap }
+.progress__note b { color: var(--text) }
+.progress__list { flex: 1 1 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; min-width: 0 }
+.progress__item { display: flex; align-items: center; gap: 8px; min-width: 0 }
+.progress__num { flex: 0 0 26px; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font: 700 14px/1 var(--display); border: 1.5px solid var(--gline-2); color: var(--muted) }
+.progress__num svg { width: 13px; height: 13px }
+.progress__label { font-size: 14px; font-weight: 600; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0 }
+.progress__line { flex: 1 1 auto; height: 2px; min-width: 10px; background: var(--gline); position: relative; overflow: hidden; border-radius: 1px }
+.progress__line span { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--gold); transition: width .5s ease }
+.progress__item:last-child .progress__line { display: none }
+.progress__item.is-current .progress__num { border-color: var(--gold); color: var(--gold-hi); background: rgba(214,178,107,.12) }
+.progress__item.is-current .progress__label { color: var(--text) }
+.progress__item.is-done .progress__num { border-color: var(--gold); background: var(--gold); color: var(--g-900) }
+.progress__item.is-done .progress__label { color: var(--text-2) }
+.lbl-full { display: none }
+@media (max-width: 599px) {
+  .progress__row { flex-direction: column; align-items: stretch; gap: 8px }
+  .progress__note { display: flex; justify-content: space-between }
+  .progress__num { flex-basis: 22px; width: 22px; height: 22px; font-size: 12px }
+  .progress__label { font-size: 13px }
+  .progress__item { gap: 6px }
+  .progress__line { display: none }
+  .progress__num { display: none }
+  .hero .kicker { font-size: 12px; letter-spacing: .12em }
+  .hero .kicker::before, .hero .kicker::after { display: none }
+}
+@media (min-width: 600px) { .progress__note span:not(:empty)::before { content: ' · ' } }
+@media (min-width: 768px) { .lbl-full { display: inline } .lbl-short { display: none } }
+
+/* ─── Гильош — гравировка, как на банкноте ────────────────────────── */
+.rosette { position: absolute; pointer-events: none; color: var(--gold) }
+.rosette svg { width: 100%; height: 100% }
+
+/* ─── 3D-медаль ───────────────────────────────────────────────────── */
+.coin { position: relative; width: var(--D); height: var(--D); user-select: none; -webkit-user-select: none }
+.coin__stage { position: absolute; inset: 0; perspective: 1500px; perspective-origin: 50% 40% }
+.coin__body { position: absolute; inset: 0; transform-style: preserve-3d }
+.coin__face { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden }
+.coin__face img { width: 100%; height: 100%; pointer-events: none; -webkit-user-drag: none }
+.coin__sheen { position: absolute; inset: 0; border-radius: 50%; pointer-events: none; mix-blend-mode: screen; background: linear-gradient(115deg, transparent 35%, rgba(255,242,210,.34) 48%, rgba(255,242,210,.08) 56%, transparent 66%); background-size: 300% 300%; background-position: var(--sheen, 50%) 50% }
+.coin__edge { position: absolute; left: 50%; top: 50%; transform-style: preserve-3d }
+.coin__edge i { position: absolute; display: block; backface-visibility: hidden; -webkit-backface-visibility: hidden }
+.coin__shadow { position: absolute; left: 14%; right: 14%; bottom: -10%; height: 12%; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.6), transparent); filter: blur(6px); transform: scaleX(var(--shadow-x, 1)); pointer-events: none }
+.coin__glow { position: absolute; inset: -35%; border-radius: 50%; pointer-events: none; z-index: -1; background: radial-gradient(closest-side, rgba(214,178,107,.26), rgba(214,178,107,.07) 55%, transparent 72%) }
+
+/* Лупа: медаль внутри круглого окна с золотым кольцом */
+.lens { position: relative; width: var(--D); height: var(--D) }
+.lens__clip { position: absolute; inset: 0; clip-path: circle(var(--clip, 150%) at 50% 50%); }
+.lens__clip .coin { position: absolute; left: 0; top: 0; transform-origin: 50% 50% }
+.lens__ring { position: absolute; inset: -6px; border-radius: 50%; pointer-events: none; opacity: var(--ring, 0); box-shadow: 0 0 0 2px var(--gold), 0 0 0 9px rgba(214,178,107,.12), 0 0 0 10px rgba(214,178,107,.35), 0 30px 60px rgba(0,0,0,.5), inset 0 0 40px rgba(0,0,0,.35) }
+
+/* Летящая медаль (десктоп) */
+.flyer { position: fixed; left: 0; top: 0; z-index: 12; pointer-events: none }
+.flyer.is-drag { pointer-events: auto; cursor: grab; touch-action: pan-y }
+.flyer.is-drag:active { cursor: grabbing }
+/* Слоты — места, где медаль «останавливается» */
+.slot { position: relative; width: var(--D); max-width: 100%; min-height: var(--D); margin: 0 auto }
+.slot__static { position: sticky; top: calc(50vh - var(--D) / 2) }
+.slot--hero { height: var(--D) }
+
+/* ─── Шаг 1: первый экран ─────────────────────────────────────────── */
+.hero { position: relative; overflow: hidden; isolation: isolate; padding: 26px 0 52px; text-align: center;
+  background: radial-gradient(70% 55% at 50% 45%, #1d4a39 0%, var(--g-900) 70%) }
+.hero .rosette { width: 900px; height: 900px; left: 50%; top: 330px; transform: translate(-50%, -50%); opacity: .5; z-index: -1 }
+.hero__frame { display: none }
+.hero__word { position: relative; z-index: 0; font: 700 clamp(46px, 14.5vw, 200px)/.9 var(--display); letter-spacing: .06em; padding-left: .06em; color: transparent; -webkit-text-stroke: 1.2px rgba(214,178,107,.55); background: linear-gradient(180deg, rgba(241,219,161,.22), rgba(214,178,107,.04)); -webkit-background-clip: text; background-clip: text; user-select: none }
+.hero__coin { position: relative; z-index: 1; margin-top: -8px }
+.hero__coin .slot { cursor: grab; touch-action: pan-y }
+.hero__h1 { margin-top: 30px; font: 400 italic 30px/1.15 var(--display); color: var(--gold-hi) }
+.hero__h1 b { display: block; font: 700 normal 16px/1.2 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--text-2); margin-bottom: 8px }
+.hero__desc { max-width: 620px; margin: 14px auto 0; color: var(--text-2) }
+.hero__side { display: inline-flex; gap: 8px; margin-top: 18px }
+.side-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 5px 16px 5px 6px; border-radius: 999px; border: 1.5px solid var(--gline-2); background: rgba(8,24,18,.5); color: var(--text-2); font-size: 16px; font-weight: 600; cursor: pointer }
+.side-btn img { width: 34px; height: 34px; border-radius: 50% }
+.side-btn[aria-pressed="true"] { border-color: var(--gold); color: var(--gold-hi); background: rgba(214,178,107,.12) }
+.buy { margin: 26px auto 0; max-width: 560px; display: grid; gap: 14px; justify-items: center }
+.price { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 4px 14px }
+.price__now { font: 700 52px/1 var(--sans); letter-spacing: -.02em; color: var(--text); white-space: nowrap }
+.price__old { font-size: 24px; color: var(--muted); text-decoration: line-through; text-decoration-thickness: 2px; white-space: nowrap }
+.price__badge { align-self: center; padding: 5px 12px; border-radius: 4px; background: var(--crimson); color: #fff; font-size: 16px; font-weight: 700; white-space: nowrap }
+.price__ship { font-size: 17px; color: var(--text-2) }
+.price__ship b { color: var(--text); white-space: nowrap }
+.buy .btn { width: 100% }
+.trustline { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; font-size: 15px; color: var(--text-2) }
+.trustline span { display: inline-flex; align-items: center; gap: 7px }
+.trustline svg { width: 18px; height: 18px; color: var(--gold) }
+.hero__more { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 4px; color: var(--text-2); font-size: 15px; text-decoration: none; background: none; border: 0; cursor: pointer }
+.hero__more svg { width: 18px; height: 18px; color: var(--gold); animation: bob 2s ease-in-out infinite }
+@keyframes bob { 50% { transform: translateY(4px) } }
+@media (min-width: 600px) { .buy .btn { width: auto; min-width: 360px } }
+@media (min-width: 1024px) {
+  .hero { padding: 40px 0 70px }
+  .hero .rosette { width: 1300px; height: 1300px; top: 400px }
+  .hero__frame { display: block; position: absolute; inset: 22px; border: 1px solid var(--gline); pointer-events: none; z-index: -1 }
+  .hero__frame::before { content: ""; position: absolute; inset: 6px; border: 1px solid rgba(214,178,107,.14) }
+  .hero__word { margin-top: 34px }
+  .hero__coin { margin-top: -90px }
+  .hero__h1 { font-size: 44px; margin-top: 36px }
+  .price__now { font-size: 60px }
+}
+
+/* ─── Лента ───────────────────────────────────────────────────────── */
+.ribbon { position: relative; z-index: 2; background: var(--g-950); border-top: 1px solid var(--gline); border-bottom: 1px solid var(--gline) }
+.ribbon__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) }
+.ribbon__item { padding: 18px 10px 18px 0; font-size: 15px; line-height: 1.35; color: var(--text-2) }
+.ribbon__item b { display: block; font: 700 22px/1.1 var(--display); color: var(--gold-hi); margin-bottom: 4px }
+@media (min-width: 1024px) { .ribbon__list { grid-template-columns: repeat(4, minmax(0, 1fr)) } .ribbon__item { padding: 24px 24px; border-left: 1px solid var(--gline) } .ribbon__item:first-child { border-left: 0; padding-left: 0 } }
+
+/* ─── История: пергамент + медаль справа ──────────────────────────── */
+.sec { position: relative; padding: 64px 0; overflow-x: clip }
+@media (min-width: 1024px) { .sec { padding: 120px 0 } }
+.hist__grid { display: grid; gap: 40px; grid-template-columns: minmax(0, 1fr) }
+.doc { position: relative; padding: 30px 20px 40px }
+.doc__epi { text-align: center; font: 400 italic 22px/1.3 var(--display); color: var(--ink-2) }
+.doc__epi small { display: block; margin-top: 6px; font: 600 12px/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3) }
+.doc__rule { display: flex; align-items: center; gap: 12px; margin: 22px 0; color: var(--cinnabar) }
+.doc__rule::before, .doc__rule::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--parch-edge)) }
+.doc__rule::after { transform: scaleX(-1) }
+.doc__rule svg { width: 16px; height: 16px }
+.doc .title { text-align: center; font-size: 36px }
+.entries { margin-top: 26px; display: grid; gap: 26px }
+.entry { display: grid; grid-template-columns: 1fr; gap: 6px }
+.entry__year { font: 700 30px/1 var(--display); color: var(--cinnabar) }
+.entry h3 { font: 700 21px/1.25 var(--sans); color: var(--ink) }
+.entry p { color: var(--ink-2); font-size: 17.5px }
+.entry:first-child .entry__body p::first-letter { float: left; font: 700 62px/.85 var(--display); color: var(--cinnabar); padding: 6px 8px 0 0 }
+.seal { position: absolute; right: 18px; bottom: -26px; width: 92px; height: 92px; border-radius: 50%; display: grid; place-items: center; transform: rotate(-12deg);
+  background: radial-gradient(circle at 35% 30%, #c8392c, #9b1f16 55%, #6f130d); box-shadow: 0 6px 14px rgba(0,0,0,.35), inset 0 -4px 8px rgba(0,0,0,.35), inset 0 3px 6px rgba(255,255,255,.2);
+  color: rgba(255,225,200,.85); font: 700 15px/1 var(--display); letter-spacing: .06em; text-align: center }
+.seal::before { content: ""; position: absolute; inset: 9px; border-radius: 50%; border: 1.5px dashed rgba(255,215,190,.45) }
+.hist__slot { display: grid; place-items: center }
+@media (min-width: 1024px) {
+  .hist__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; align-items: stretch }
+  .doc { padding: 56px 60px 64px }
+  .doc .title { font-size: 48px }
+  .entry { grid-template-columns: 110px 1fr; gap: 20px }
+  .entry__year { font-size: 34px; padding-top: 2px }
+  .entry__body { display: grid; gap: 6px }
+  .hist__slot { display: block }
+  .hist__slot .slot { height: 100% }
+}
+
+/* ─── Детали: лупа ────────────────────────────────────────────────── */
+.det__head { display: grid; gap: 14px; justify-items: center; margin-bottom: 36px }
+@media (min-width: 1024px) { .det__head { justify-items: start } }
+.det__row { display: grid; gap: 24px; grid-template-columns: minmax(0, 1fr); align-items: center; padding: 30px 0 }
+.det__txt { text-align: center; max-width: 460px; margin: 0 auto }
+.det__num { font: 400 italic 20px/1 var(--display); color: var(--gold) }
+.det__txt h3 { margin-top: 8px; font: 700 34px/1.1 var(--display); color: var(--text) }
+.det__txt p { margin-top: 10px; color: var(--text-2) }
+.det__row .slot { --D: min(260px, 70vw) }
+@media (min-width: 1024px) {
+  .det__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; min-height: 86vh; padding: 0 }
+  .det__row:nth-child(even) .det__txt { order: 2 }
+  .det__txt { text-align: left; margin: 0 }
+  .det__txt h3 { font-size: 52px }
+  .det__row .slot { --D: min(440px, 32vw); height: 86vh; display: flex; align-items: center }
+}
+
+/* ─── Заказ ───────────────────────────────────────────────────────── */
+.ord { background: radial-gradient(60% 50% at 25% 40%, rgba(31,72,56,.9), transparent 70%) }
+.ord__grid { display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr); align-items: center }
+.ord__left { display: grid; gap: 24px; justify-items: center }
+.ord__left .slot { --D: min(240px, 62vw) }
+@media (max-width: 1023px) { .ord__left { display: contents } .ord__left .slot { order: 1 } .form-card { order: 2 } .specs { order: 3; margin: 0 auto } }
+.specs { width: 100%; max-width: 440px; border-top: 1px solid var(--gline) }
+.specs div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--gline); font-size: 16px }
+.specs dt { color: var(--text-2) }
+.specs dd { margin: 0; text-align: right; font-weight: 600; color: var(--text) }
+.specs dd.tbd { color: var(--muted); font-weight: 400 }
+.form-card { padding: 28px 18px 22px }
+.form-card .title { font-size: 34px }
+.form-card__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 14px 0 4px }
+.form-card__price .price__now { font-size: 38px; color: var(--ink) }
+.form-card__price .price__old { color: var(--ink-3); font-size: 20px }
+.form-card__ship { font-size: 16px; color: var(--ink-2); margin-bottom: 20px }
+@media (min-width: 768px) { .form-card { padding: 40px 44px 34px } }
+@media (min-width: 1024px) {
+  .ord__grid { grid-template-columns: minmax(0, 1fr) 560px; gap: 72px }
+  .ord__left .slot { --D: min(380px, 28vw) }
+  .form-card .title { font-size: 44px }
+}
+
+/* ─── Поля ────────────────────────────────────────────────────────── */
+.form { display: grid; gap: 18px }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; position: relative }
+.field__label { font-size: 16px; font-weight: 700; line-height: 1.3; color: var(--ink) }
+.field__label .req { color: var(--crimson) }
+.field__label .opt { font-weight: 400; color: var(--ink-3) }
+.input { width: 100%; min-height: 56px; padding: 12px 14px; font: 400 18px/1.3 var(--sans); color: var(--ink); background: #fffdf7; border: 1.5px solid var(--field); border-radius: var(--r); -webkit-appearance: none; appearance: none; transition: border-color .15s, box-shadow .15s }
+.input::placeholder { color: #9d8f78 }
+.input:hover { border-color: var(--ink-2) }
+.input:focus { outline: none; border-color: var(--ink-2); box-shadow: 0 0 0 3px rgba(214,178,107,.6) }
+.input[aria-invalid="true"] { border-color: var(--err); border-width: 2px; background: #fffafa }
+.input:disabled { background: #ebe3d1; border-color: #cdbf9f; color: #8d7f68; cursor: not-allowed }
+.field__err { display: flex; gap: 6px; align-items: flex-start; font-size: 15px; line-height: 1.35; font-weight: 700; color: var(--err) }
+.field__err svg { width: 18px; height: 18px; flex: 0 0 18px; margin-top: 1px }
+.field__hint { font-size: 15px; line-height: 1.35; color: var(--ink-3) }
+.parch :focus-visible, .modal :focus-visible { outline-color: var(--ink) }
+.check { display: flex; gap: 12px; align-items: flex-start; min-height: 44px; padding: 8px 0; cursor: pointer; font-size: 16px; line-height: 1.45; color: var(--ink-2) }
+.check input { -webkit-appearance: none; appearance: none; margin: 0; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 6px; border: 2px solid var(--field); background: #fffdf7; display: grid; place-content: center; cursor: pointer }
+.check input::before { content: ""; width: 14px; height: 8px; margin-top: -3px; border: 3px solid #fff; border-top: 0; border-right: 0; transform: rotate(-45deg); opacity: 0 }
+.check input:checked { background: var(--crimson); border-color: var(--crimson) }
+.check input:checked::before { opacity: 1 }
+.check--center { align-items: center }
+.check.is-invalid input { border-color: var(--err); box-shadow: 0 0 0 4px rgba(179,38,30,.2) }
+.consent-hint { display: flex; gap: 10px; align-items: flex-start; margin-top: -6px; padding: 10px 12px; border-radius: var(--r); background: var(--err-bg); border-left: 4px solid var(--err); font-size: 15px; line-height: 1.4; font-weight: 700; color: var(--err) }
+.consent-hint svg { width: 20px; height: 20px; flex: 0 0 20px }
+.alert { display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border-radius: var(--r); font-size: 16px; line-height: 1.45 }
+.alert svg { width: 22px; height: 22px; flex: 0 0 22px; margin-top: 1px }
+.alert--error { background: var(--err-bg); border: 1.5px solid #e2aaa4; color: #7d1a14 }
+.alert--error a { color: #7d1a14; font-weight: 700; white-space: nowrap; display: inline-block }
+.pay-note { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 15px; color: var(--ink-2); text-align: center }
+.pay-note svg { width: 18px; height: 18px; color: var(--ok); flex-shrink: 0 }
+
+/* ─── Страницы шагов 2–4 и «Спасибо» ──────────────────────────────── */
+.page { position: relative; overflow: hidden; isolation: isolate; padding: 30px 0 64px }
+.page .rosette { width: 1100px; height: 1100px; right: -380px; top: -300px; opacity: .22; z-index: -1 }
+@media (min-width: 1024px) { .page { padding: 52px 0 100px } }
+.flash { display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; margin-bottom: 30px; border-radius: var(--r); background: rgba(110,190,140,.12); border: 1px solid rgba(140,210,165,.35); color: #cdeeda; font-size: 16px; line-height: 1.4; font-weight: 600 }
+.flash svg { width: 22px; height: 22px; flex: 0 0 22px; color: #86d6a4 }
+
+.offer { display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr) }
+.offer__head { display: grid; gap: 12px; justify-items: start }
+.offer__title { font: 700 40px/1.05 var(--display); color: var(--text); text-wrap: balance }
+.offer__media { width: 100%; max-width: 520px; aspect-ratio: 1; margin: 0 auto; display: grid; place-content: center; justify-items: center; gap: 10px; padding: 24px; text-align: center; color: var(--muted); border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, rgba(214,178,107,.14), transparent 65%), var(--g-800); box-shadow: inset 0 0 0 1px var(--gline-2), inset 0 0 0 12px var(--g-800), inset 0 0 0 13px var(--gline) }
+.offer__media svg { width: 54px; height: 54px; color: var(--gold) }
+.offer__media b { font-size: 17px; color: var(--text-2); max-width: 280px }
+.offer__media small { font-size: 14px }
+.offer__desc { color: var(--text-2) }
+.offer__desc p + p { margin-top: 14px }
+.gifts { padding: 20px; border-radius: 10px; border: 1px solid var(--gline-2); background: rgba(214,178,107,.06) }
+.gifts__title { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font: 700 20px/1.2 var(--display); color: var(--gold-hi) }
+.gifts__title svg { width: 24px; height: 24px; color: var(--gold) }
+.gifts li { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--gline); font-size: 17px; color: var(--text-2) }
+.gifts li:first-child { border-top: 0 }
+.gifts li svg { width: 20px; height: 20px; flex: 0 0 20px; margin-top: 3px; color: var(--gold) }
+.offer__price .price { justify-content: flex-start }
+.price__label { display: block; font-size: 15px; color: var(--muted); margin-bottom: 4px }
+.price__now--tbd { font: 700 34px/1.1 var(--display); color: var(--gold-hi); letter-spacing: 0 }
+.decide { padding: 24px 20px; display: grid; gap: 14px }
+.decide__q { font: 700 20px/1.35 var(--sans); color: var(--ink) }
+.decide__btns { display: grid; gap: 12px }
+.decide__terms { display: grid; gap: 2px; font-size: 15px; line-height: 1.4; color: var(--ink-2) }
+.decide__terms .row { display: flex; gap: 8px; align-items: flex-start }
+.decide__terms svg { width: 18px; height: 18px; flex: 0 0 18px; margin-top: 1px; color: var(--ok) }
+.receipt { padding: 20px }
+.offer__aside { display: grid; gap: 18px }
+@media (min-width: 1024px) {
+  .offer { grid-template-columns: 420px minmax(0, 1fr) 380px; gap: 48px; align-items: start }
+  .offer__head { grid-column: 1 / 3 }
+  .offer__media { grid-row: 2 / 4 }
+  .offer__main { grid-column: 2 }
+  .offer__aside { grid-column: 3; grid-row: 1 / 4; position: sticky; top: 24px }
+  .offer__title { font-size: 56px }
+}
+.offer__main { display: grid; gap: 22px; align-content: start }
+
+/* Корзина-квитанция */
+.cart__title { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; font: 700 18px/1.3 var(--display) }
+.cart__title span { font: 400 15px/1.3 var(--sans); color: var(--ink-3) }
+.lines { display: grid }
+.line { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px dashed var(--parch-edge); font-size: 16px; line-height: 1.35 }
+.line:first-child { border-top: 0 }
+.line__name { display: flex; gap: 10px; align-items: center; min-width: 0 }
+.line__name img, .line__ico { width: 40px; height: 40px; flex: 0 0 40px }
+.line__ico { display: grid; place-items: center; border-radius: 50%; background: var(--parch-2); color: var(--ink-3) }
+.line__ico svg { width: 20px; height: 20px }
+.line__price { font-weight: 700; white-space: nowrap; text-align: right }
+.line__price--tbd { color: var(--ink-3); white-space: normal; max-width: 9em }
+.line--muted .line__name, .line--muted .line__price { color: var(--ink-2); font-weight: 400 }
+.line--new { animation: lineIn .8s ease }
+@keyframes lineIn { from { background: #f1dfb3 } to { background: transparent } }
+.total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 12px; margin-top: 4px; border-top: 2px solid var(--ink-2) }
+.total__label { font-weight: 700; font-size: 18px }
+.total__val { text-align: right }
+.total__val b { display: block; font: 700 28px/1.1 var(--sans); white-space: nowrap }
+.total__val small { display: block; font-size: 14px; color: var(--ink-3); margin-top: 2px }
+
+/* Оформление */
+.co__head { display: grid; gap: 10px; margin-bottom: 26px }
+.co__title { font: 700 44px/1.02 var(--display) }
+.co { display: grid; gap: 24px; grid-template-columns: minmax(0, 1fr) }
+.co__form { padding: 24px 18px }
+.fs { border: 0; margin: 0; padding: 0; min-width: 0 }
+.fs + .fs { margin-top: 28px; padding-top: 24px; border-top: 1px dashed var(--parch-edge) }
+.fs__legend { float: left; width: 100%; padding: 0; margin-bottom: 14px; font: 700 26px/1.1 var(--display); color: var(--ink) }
+.fs__legend + * { clear: both }
+.grid { display: grid; gap: 18px 14px; grid-template-columns: repeat(2, minmax(0, 1fr)) }
+.grid > * { grid-column: span 2 }
+.grid > .half-m { grid-column: span 1 }
+.private { align-self: end }
+.pay-opt { display: flex; gap: 14px; align-items: flex-start; padding: 16px; border: 2px solid var(--crimson); border-radius: 10px; background: #fffdf7 }
+.pay-opt input { -webkit-appearance: none; appearance: none; margin: 2px 0 0; flex: 0 0 26px; width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--crimson); display: grid; place-content: center }
+.pay-opt input::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--crimson) }
+.pay-opt b { display: block; font-size: 18px }
+.pay-opt span { display: block; font-size: 16px; color: var(--ink-2); margin-top: 2px }
+.co__card { padding: 22px 18px }
+.co__card .cart__title { font-size: 26px; margin-bottom: 10px }
+.trust { display: flex; gap: 10px; align-items: flex-start; margin: 16px 0; padding: 12px 14px; border-radius: var(--r); background: var(--ok-bg); font-size: 16px; line-height: 1.45; color: #1d4d31 }
+.trust svg { width: 24px; height: 24px; flex: 0 0 24px; color: var(--ok) }
+.trust b { color: var(--ok) }
+.co__card .alert { margin-bottom: 14px }
+.support { margin-top: 12px; text-align: center; font-size: 16px; color: var(--ink-2) }
+.support a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; white-space: nowrap; color: var(--ink); text-underline-offset: 4px }
+@media (min-width: 640px) {
+  .grid { grid-template-columns: repeat(6, minmax(0, 1fr)) }
+  .grid > * { grid-column: span 6 }
+  .grid > .w-3 { grid-column: span 3 }
+  .grid > .w-2, .grid > .half-m.w-2 { grid-column: span 2 }
+  .private { padding-bottom: 6px }
+  .co__form { padding: 32px }
+}
+@media (min-width: 1024px) {
+  .co { grid-template-columns: minmax(0, 1fr) 410px; gap: 40px; align-items: start }
+  .co__title { font-size: 60px }
+  .co__aside { position: sticky; top: 24px }
+  .co__card { padding: 28px 26px }
+  .w-phone { grid-column: span 3 !important }
+  .co__form { padding: 36px 40px }
+}
+.ac__box { position: relative }
+.ac__list { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); background: #fffdf7; border: 1.5px solid var(--ink-2); border-radius: var(--r); box-shadow: 0 14px 30px rgba(40,28,18,.25); overflow: hidden; max-height: 380px; overflow-y: auto; color: var(--ink) }
+.ac__opt { display: block; width: 100%; min-height: 52px; padding: 10px 14px; text-align: left; background: none; border: 0; border-top: 1px solid #e3d6b8; cursor: pointer; line-height: 1.3 }
+.ac__opt:first-child { border-top: 0 }
+.ac__opt[aria-selected="true"], .ac__opt:hover { background: #f5ead0 }
+.ac__main { display: block; font-size: 17px }
+.ac__main mark { background: none; color: inherit; font-weight: 700 }
+.ac__sub { display: block; font-size: 14px; color: var(--ink-3) }
+.ac__empty { padding: 12px 14px; font-size: 15px; color: var(--ink-3) }
+.ac__foot { padding: 8px 14px; font-size: 13px; color: var(--ink-3); background: var(--parch-2) }
+
+/* Спасибо */
+.ty { max-width: 820px; margin: 0 auto; text-align: center }
+.ty .coin { --D: 190px; margin: 0 auto 40px }
+.ty__title { font: 700 46px/1.05 var(--display) }
+.ty__title i { font-weight: 400; color: var(--gold-hi) }
+.ty__lead { margin-top: 12px; font-size: 19px; color: var(--text-2) }
+.ty__card { margin-top: 32px; padding: 28px 20px; text-align: left }
+.nextlist { display: grid; gap: 16px; counter-reset: n }
+.nextlist li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; font-size: 17px; line-height: 1.45; color: var(--ink-2) }
+.nextlist li::before { counter-increment: n; content: counter(n); width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--cinnabar); color: #fff; font: 700 19px/1 var(--sans) }
+.nextlist b { display: block; color: var(--ink); font-size: 18px }
+.ty__order { margin-top: 26px; padding-top: 22px; border-top: 1px dashed var(--parch-edge) }
+.ty__addr { margin-top: 12px; font-size: 16px; color: var(--ink-2) }
+.ty__support { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; justify-content: center; color: var(--text-2) }
+.ty__support a { font: 700 26px/1.2 var(--sans); color: var(--gold-hi); text-decoration: none; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; min-height: 48px }
+.ty__support svg { width: 24px; height: 24px }
+@media (min-width: 768px) { .ty__card { padding: 38px 44px } .ty__title { font-size: 62px } }
+
+/* ─── Гарантии, подвал ────────────────────────────────────────────── */
+.guar { position: relative; z-index: 13; padding: 34px 0; background: var(--g-950); border-top: 1px solid var(--gline) }
+.guar__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px }
+.guar__item { display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 600; line-height: 1.25 }
+.guar__ico { flex: 0 0 52px; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; border: 1.5px solid var(--gold-lo); color: var(--gold) }
+.guar__ico svg { width: 26px; height: 26px }
+@media (min-width: 1024px) { .guar__list { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px } .guar__item { font-size: 17px } .guar__ico { flex-basis: 60px; width: 60px; height: 60px } }
+.ftr { position: relative; z-index: 13; background: #061510; padding: 34px 0 28px; font-size: 15px; line-height: 1.55; color: var(--text-2); border-top: 1px solid var(--gline) }
+.ftr__grid { display: grid; gap: 24px }
+.ftr__org { font-weight: 700; color: var(--text); margin-bottom: 4px }
+.ftr__req { color: var(--muted); font-size: 14px }
+.ftr__tel { display: grid }
+.ftr__tel a { display: inline-flex; align-items: center; min-height: 44px; color: var(--text); font-weight: 700; font-size: 17px; text-decoration: none; white-space: nowrap }
+.ftr__tel span { color: var(--muted); font-weight: 400; font-size: 15px; margin-left: 8px }
+.ftr__mail { display: inline-flex; align-items: center; min-height: 44px; color: var(--gold) }
+.ftr__docs { display: grid }
+.ftr__docs .link { display: inline-flex; align-items: center; min-height: 44px; color: var(--text-2); text-align: left }
+.ftr__copy { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--gline); font-size: 14px; color: var(--muted) }
+@media (min-width: 1024px) { .ftr__grid { grid-template-columns: 1.4fr 1fr 1fr; gap: 48px } }
+
+/* ─── Нижняя панель (телефон) ─────────────────────────────────────── */
+.dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: rgba(8,24,18,.96); border-top: 1px solid var(--gline-2); box-shadow: 0 -10px 30px rgba(0,0,0,.5); padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom)); backdrop-filter: blur(8px) }
+.dock__row { display: flex; align-items: center; gap: 12px }
+.dock__price { flex: 0 1 auto; min-width: 0; line-height: 1.15 }
+.dock__price b { display: block; font-size: 24px; white-space: nowrap }
+.dock__price s { font-size: 15px; color: var(--muted) }
+.dock__row .btn { flex: 1 1 auto; min-height: 56px; padding: 8px 14px }
+.dock__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
+.dock__pair .btn { min-height: 60px; padding: 6px 10px; font-size: 16px; line-height: 1.2 }
+@media (min-width: 1024px) { .dock { display: none !important } }
+
+/* ─── Окна ────────────────────────────────────────────────────────── */
+.modal { width: min(560px, calc(100vw - 24px)); max-height: calc(100vh - 24px); padding: 0; border: 0; border-radius: 6px; background: var(--parch); color: var(--ink); box-shadow: 0 24px 60px rgba(0,0,0,.6); overflow: auto }
+.modal::backdrop { background: rgba(4,12,9,.75) }
+.modal__body { padding: 30px 22px 22px; display: grid; gap: 14px }
+@media (min-width: 768px) { .modal__body { padding: 36px } }
+.modal__x { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: transparent; cursor: pointer; display: grid; place-items: center; color: var(--ink-2) }
+.modal__x:hover { background: var(--parch-2) }
+.modal__x svg { width: 22px; height: 22px }
+.modal__ico { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--err-bg); color: var(--err) }
+.modal__ico svg { width: 30px; height: 30px }
+.modal .title { font-size: 32px; padding-right: 36px }
+.modal__text { font-size: 17px; color: var(--ink-2) }
+.modal__btns { display: grid; gap: 10px; margin-top: 6px }
+.modal__doc { max-height: 55vh; overflow: auto; font-size: 16px; color: var(--ink-2) }
+
+.step { animation: stepIn .35s ease both }
+@keyframes stepIn { from { opacity: 0 } to { opacity: 1 } }
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease }
+.reveal.is-in { opacity: 1; transform: none }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important } .reveal { opacity: 1; transform: none } }
+.is-shot *, .is-shot *::before, .is-shot *::after { animation: none !important; transition: none !important }
+.is-shot .reveal { opacity: 1; transform: none }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1l-2.2 2.23z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path fill="none" stroke="#0c211a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.3l3 3 6-6.3"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path stroke="#fff" stroke-width="2.4" stroke-linecap="round" d="M12 7v6"/><circle cx="12" cy="16.8" r="1.4" fill="#fff"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.8l7.5 3v5.6c0 4.8-3.3 8.4-7.5 9.9-4.2-1.5-7.5-5.1-7.5-9.9V5.8z"/><path d="M8.6 12.2l2.4 2.4 4.6-4.8"/></g></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.2l.9 1.9 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 8.4l2-.3z"/><path d="M8.3 13.7L7 21l5-2.6 5 2.6-1.3-7.3"/></g></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.8 12a8.2 8.2 0 1 0 2.4-5.8"/><path d="M3.5 3.8v4.6h4.6"/></g><text x="12.4" y="15.6" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="currentColor">14</text></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="M3 7.5h16.5a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18z"/><path d="M3 7.5l12-3.3a1 1 0 0 1 1.3 1V7.5"/><path d="M21 12h-4a1.5 1.5 0 0 0 0 3h4"/></g></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="M4 11h16v10H4z"/><path d="M2.5 7.5h19V11h-19z"/><path d="M12 7.5V21"/><path d="M12 7.5C10.5 4.2 6.5 3.6 6.5 5.8S10.2 7.5 12 7.5zm0 0c1.5-3.3 5.5-3.9 5.5-1.7S13.8 7.5 12 7.5z"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3.5 7.5L12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5L12 11.5l8.5-4"/><path d="M12 11.5v9"/></g></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="9.5" r="2"/><path d="M21 16l-5-5-8 9"/></g></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M2.5 6h11v10h-11z"/><path d="M13.5 9.5h4l3 3.2V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></g></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-diamond" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3l3 9-3 9-3-9z"/></symbol>
+  <symbol id="rosette-sym" viewBox="-500 -500 1000 1000"><g id="rosette-g" fill="none" stroke="currentColor" stroke-width=".7"></g></symbol>
+</svg>
+
+<div class="top">
+  <header class="hdr">
+    <div class="wrap hdr__in">
+      <div class="logo"><img src="assets/logo-rmd.svg" width="42" height="38" alt=""><span class="logo__text">Русский<br>Монетный Двор</span></div>
+      <a class="hdr__tel" href="tel:88002509505"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><span class="hdr__num">8 (800) 250-95-05</span><span class="hdr__sub">Звонок бесплатный</span></span></a>
+    </div>
+  </header>
+  <div class="cookie" id="cookie" role="region" aria-label="Уведомление о файлах cookie" hidden>
+    <div class="wrap cookie__in">
+      <p>Сайт использует cookie. <button type="button" class="link" data-doc="policy">Подробнее</button></p>
+      <button type="button" class="btn btn--line btn--sm" id="cookieOk">Хорошо</button>
+    </div>
+  </div>
+  <nav class="progress" aria-label="Этапы заказа">
+    <div class="wrap progress__row">
+      <p class="progress__note" id="progressNote" aria-live="polite"><b>Шаг 1 из 3</b><span></span></p>
+      <ol class="progress__list">
+        <li class="progress__item"><span class="progress__num">1</span><span class="progress__label">Медаль</span><span class="progress__line"><span></span></span></li>
+        <li class="progress__item"><span class="progress__num">2</span><span class="progress__label"><span class="lbl-full">Дополнительные предложения</span><span class="lbl-short">Предложения</span></span><span class="progress__line"><span></span></span></li>
+        <li class="progress__item"><span class="progress__num">3</span><span class="progress__label">Оформление</span><span class="progress__line"><span></span></span></li>
+      </ol>
+    </div>
+  </nav>
+</div>
+
+<!-- Шаблон 3D-медали: клонируется скриптом -->
+<template id="coinTpl">
+  <div class="coin">
+    <div class="coin__glow" aria-hidden="true"></div>
+    <div class="coin__stage">
+      <div class="coin__body">
+        <div class="coin__face coin__face--front"><img src="assets/kopeyka-face-avers.webp" alt="" width="1056" height="1056" draggable="false"><span class="coin__sheen"></span></div>
+        <div class="coin__face coin__face--back"><img src="assets/kopeyka-face-revers.webp" alt="" width="1056" height="1056" draggable="false"><span class="coin__sheen"></span></div>
+        <div class="coin__edge"></div>
+      </div>
+    </div>
+    <div class="coin__shadow" aria-hidden="true"></div>
+  </div>
+</template>
+
+<main id="main">
+
+<!-- ═══ ШАГ 1 — медаль ═══════════════════════════════════════════════ -->
+<div class="step" data-view="medal">
+
+  <section class="hero" aria-labelledby="t-medal">
+    <div class="rosette" aria-hidden="true"><svg><use href="#rosette-sym"/></svg></div>
+    <div class="hero__frame" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="kicker kicker--c">Коллекционная медаль · 2026</p>
+      <p class="hero__word" aria-hidden="true">КОПЕЙКА</p>
+      <div class="hero__coin">
+        <div class="slot slot--hero" data-slot="hero" data-ry="-18" data-rx="10" data-scale="1" role="img" aria-label="Медаль «Копейка Петра I» в 3D. Поворачивается пальцем или мышью"></div>
+      </div>
+      <h1 class="hero__h1" id="t-medal" tabindex="-1"><b>Медаль</b>Копейка Петра&nbsp;I</h1>
+      <p class="hero__desc">Двуглавый орёл под тремя коронами, со&nbsp;скипетром и&nbsp;державой&nbsp;— как на&nbsp;монетах петровского времени. На&nbsp;обороте&nbsp;— старинное «КО&nbsp;ПЕИКА» и&nbsp;год 2026.</p>
+      <div class="hero__side" role="group" aria-label="Сторона медали">
+        <button type="button" class="side-btn" data-side="0" aria-pressed="true"><img src="assets/kopeyka-face-avers.webp" alt="">Аверс</button>
+        <button type="button" class="side-btn" data-side="1" aria-pressed="false"><img src="assets/kopeyka-face-revers.webp" alt="">Реверс</button>
+      </div>
+      <div class="buy">
+        <div class="price"><span class="price__now">1&nbsp;495&nbsp;₽</span><s class="price__old"><span class="vh">Старая цена: </span>2&nbsp;990&nbsp;₽</s><span class="price__badge">Выгода 50&nbsp;%</span></div>
+        <p class="price__ship">+ <b>399&nbsp;₽</b> за&nbsp;упаковку и&nbsp;отправку</p>
+        <button type="button" class="btn btn--gold" id="heroCta" data-go-order>Заказать за 1&nbsp;495&nbsp;₽</button>
+        <p class="trustline"><span><svg aria-hidden="true"><use href="#i-wallet"/></svg>Оплата при получении</span><span><svg aria-hidden="true"><use href="#i-return"/></svg>Возврат 14 дней</span></p>
+        <button type="button" class="hero__more" data-go="#history"><svg aria-hidden="true"><use href="#i-down"/></svg>История и детали медали</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="ribbon" aria-label="Коротко о медали">
+    <ul class="wrap ribbon__list">
+      <li class="ribbon__item"><b>Орёл</b>под тремя коронами, со&nbsp;скипетром и&nbsp;державой</li>
+      <li class="ribbon__item"><b>«КО&nbsp;ПЕИКА»</b>надпись по-старинному, в&nbsp;два слога</li>
+      <li class="ribbon__item"><b>Витой ободок</b>кант в&nbsp;виде кручёного шнура</li>
+      <li class="ribbon__item"><b>2026</b>год выпуска на&nbsp;обороте</li>
+    </ul>
+  </section>
+
+  <section class="sec hist" id="history" aria-labelledby="t-hist">
+    <div class="wrap hist__grid">
+      <article class="parch doc reveal">
+        <p class="doc__epi">«Копейка рубль бережёт»<small>Русская пословица</small></p>
+        <p class="doc__rule" aria-hidden="true"><svg><use href="#i-diamond"/></svg></p>
+        <h2 class="title" id="t-hist">Как копейка <i>стала круглой</i></h2>
+        <ol class="entries">
+          <li class="entry"><p class="entry__year">1535</p><div class="entry__body"><h3>Всадник с&nbsp;копьём</h3><p>При Елене Глинской в&nbsp;Русском государстве вводят единую монету. На&nbsp;ней чеканят всадника с&nbsp;копьём&nbsp;— так монета и&nbsp;получает имя «копейка».</p></div></li>
+          <li class="entry"><p class="entry__year">XVI–XVII</p><div class="entry__body"><h3>Серебряные «чешуйки»</h3><p>Копейки делают из&nbsp;серебряной проволоки: её рубят, расплющивают и&nbsp;чеканят. Монетки выходят неровными, похожими на&nbsp;рыбью чешую,&nbsp;— отсюда прозвище.</p></div></li>
+          <li class="entry"><p class="entry__year">1704</p><div class="entry__body"><h3>Реформа Петра&nbsp;I</h3><p>Пётр&nbsp;I вводит круглую медную копейку. На&nbsp;монетах его времени&nbsp;— двуглавый орёл под тремя коронами, со&nbsp;скипетром и&nbsp;державой, а&nbsp;слово пишут по-старинному: «КОПЕИКА».</p></div></li>
+          <li class="entry"><p class="entry__year">2026</p><div class="entry__body"><h3>Копейка Петра&nbsp;I в&nbsp;ваших руках</h3><p>Медаль повторяет петровский облик: орёл с&nbsp;регалиями, надпись в&nbsp;два слога «КО&nbsp;ПЕИКА», витой ободок&nbsp;— и&nbsp;год 2026.</p></div></li>
+        </ol>
+        <span class="seal" aria-hidden="true">1704</span>
+      </article>
+      <div class="hist__slot"><div class="slot" data-slot="hist" data-ry="180" data-rx="8" data-spin="180" data-scale=".92"></div></div>
+    </div>
+  </section>
+
+  <section class="sec det" aria-labelledby="t-det">
+    <div class="wrap">
+      <div class="det__row">
+        <div class="det__txt reveal"><div class="det__head"><p class="kicker">Рассмотрите вблизи</p><h2 class="title" id="t-det">Каждая деталь <i>прочеканена</i></h2></div><p class="det__num">I</p><h3>Три короны</h3><p>Над головами орла&nbsp;— две малые короны и&nbsp;большая, с&nbsp;крестами и&nbsp;«жемчужинами» по&nbsp;ободу.</p></div>
+        <div class="slot" data-slot="crown" data-ry="0" data-rx="0" data-zoom="2.6" data-fx="0" data-fy="-.36"></div>
+      </div>
+      <div class="det__row">
+        <div class="det__txt reveal"><p class="det__num">II</p><h3>Скипетр</h3><p>В&nbsp;правой лапе орла&nbsp;— скипетр, знак государевой власти.</p></div>
+        <div class="slot" data-slot="scepter" data-ry="0" data-rx="0" data-zoom="2.5" data-fx="-.36" data-fy=".1"></div>
+      </div>
+      <div class="det__row">
+        <div class="det__txt reveal"><p class="det__num">III</p><h3>Держава</h3><p>В&nbsp;левой лапе&nbsp;— держава: шар, увенчанный крестом.</p></div>
+        <div class="slot" data-slot="orb" data-ry="0" data-rx="0" data-zoom="2.5" data-fx=".32" data-fy=".16"></div>
+      </div>
+      <div class="det__row">
+        <div class="det__txt reveal"><p class="det__num">IV</p><h3>«КО&nbsp;ПЕИКА»</h3><p>На&nbsp;обороте&nbsp;— слово в&nbsp;два слога и&nbsp;по-старинному, без&nbsp;«й», а&nbsp;под ним год 2026.</p></div>
+        <div class="slot" data-slot="word" data-ry="180" data-rx="0" data-zoom="1.9" data-fx="0" data-fy=".08"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ord" id="order" aria-labelledby="t-lead">
+    <div class="wrap ord__grid">
+      <div class="ord__left">
+        <div class="slot" data-slot="order" data-ry="-24" data-rx="10" data-scale=".86"></div>
+        <dl class="specs reveal">
+          <div><dt>Металл и&nbsp;покрытие</dt><dd class="tbd">[уточнить]</dd></div>
+          <div><dt>Качество чеканки</dt><dd class="tbd">[уточнить]</dd></div>
+          <div><dt>Диаметр</dt><dd class="tbd">[уточнить]</dd></div>
+          <div><dt>Тираж</dt><dd class="tbd">[уточнить]</dd></div>
+          <div><dt>В&nbsp;комплекте</dt><dd class="tbd">[уточнить]</dd></div>
+        </dl>
+      </div>
+      <form class="parch form-card form reveal" id="leadForm" novalidate>
+        <div>
+          <p class="kicker" style="color:var(--cinnabar)">Заказ</p>
+          <h2 class="title" id="t-lead" style="margin-top:8px">Копейка Петра&nbsp;I</h2>
+          <div class="form-card__price"><span class="price__now">1&nbsp;495&nbsp;₽</span><s class="price__old"><span class="vh">Старая цена: </span>2&nbsp;990&nbsp;₽</s><span class="price__badge">−50&nbsp;%</span></div>
+          <p class="form-card__ship">+ 399&nbsp;₽ за&nbsp;упаковку и&nbsp;отправку. Сейчас платить не&nbsp;нужно.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-first">Имя <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" id="f-first" name="first" type="text" autocomplete="given-name" autocapitalize="words" enterkeyhint="next" required aria-describedby="e-first">
+          <p class="field__err" id="e-first" hidden></p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-last">Фамилия <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" id="f-last" name="last" type="text" autocomplete="family-name" autocapitalize="words" enterkeyhint="next" required aria-describedby="e-last">
+          <p class="field__err" id="e-last" hidden></p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-email">Эл. почта <span class="req" aria-hidden="true">*</span></label>
+          <input class="input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" enterkeyhint="done" required aria-describedby="e-email" placeholder="name@mail.ru">
+          <p class="field__err" id="e-email" hidden></p>
+        </div>
+        <div>
+          <label class="check" id="consentRow">
+            <input type="checkbox" id="f-consent" name="consent" aria-describedby="e-consent">
+            <span>Я принимаю <button type="button" class="link" data-doc="terms">Условия заказа</button> и&nbsp;даю согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<button type="button" class="link" data-doc="policy">Политикой обработки ПДн</button></span>
+          </label>
+          <p class="consent-hint" id="e-consent" hidden><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Поставьте галочку, чтобы продолжить. Без согласия мы не сможем принять заказ.</span></p>
+        </div>
+        <button type="submit" class="btn btn--red btn--block" id="leadSubmit">Да, я заказываю</button>
+        <p class="pay-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Предоплата не требуется. Оплата при получении</p>
+      </form>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ ШАГИ 2–3 — спецпредложение ═══════════════════════════════════ -->
+<section class="step page" data-view="offer" aria-labelledby="t-offer" hidden>
+  <div class="rosette" aria-hidden="true"><svg><use href="#rosette-sym"/></svg></div>
+  <div class="wrap">
+    <p class="flash" id="offerFlash"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span></span></p>
+    <div class="offer">
+      <header class="offer__head"><p class="kicker">Специальное предложение</p><h1 class="offer__title" id="t-offer" tabindex="-1"></h1></header>
+      <div class="offer__media" id="offerMedia"></div>
+      <div class="offer__main">
+        <div class="offer__price" id="offerPrice"></div>
+        <div class="offer__desc" id="offerDesc"></div>
+        <section class="gifts" aria-labelledby="t-gifts"><h2 class="gifts__title" id="t-gifts"><svg aria-hidden="true"><use href="#i-gift"/></svg>Аксессуары в подарок</h2><ul id="offerGifts"></ul></section>
+      </div>
+      <aside class="offer__aside" aria-label="Решение и ваш заказ">
+        <div class="parch decide" id="offerDecision">
+          <p class="decide__q" id="offerQ"></p>
+          <div class="decide__btns">
+            <button type="button" class="btn btn--red btn--block" data-offer="yes">Да, добавить в заказ</button>
+            <button type="button" class="btn btn--green btn--block" data-offer="no">Нет, спасибо</button>
+          </div>
+          <div class="decide__terms">
+            <p class="row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Предоплата не требуется. Оплата при получении на почте.</span></p>
+            <p><button type="button" class="link link--tap" data-doc="terms">Условия заказа</button></p>
+          </div>
+        </div>
+        <div class="parch receipt" data-cart="mini"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ШАГ 4 — оформление ═══════════════════════════════════════════ -->
+<section class="step page" data-view="checkout" aria-labelledby="t-checkout" hidden>
+  <div class="rosette" aria-hidden="true"><svg><use href="#rosette-sym"/></svg></div>
+  <div class="wrap">
+    <div class="co__head"><p class="kicker">Последний шаг</p><h1 class="co__title" id="t-checkout" tabindex="-1">Куда доставить заказ</h1><p class="lead">Посылку доставит Почта России. Вы оплатите её при получении.</p></div>
+    <div class="co">
+      <form class="parch co__form" id="orderForm" novalidate>
+        <fieldset class="fs" id="fsContacts">
+          <legend class="fs__legend">Контакты</legend>
+          <div class="grid">
+            <div class="field w-phone">
+              <label class="field__label" for="f-phone">Телефон <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required aria-describedby="e-phone h-phone">
+              <p class="field__err" id="e-phone" hidden></p>
+              <p class="field__hint" id="h-phone">Менеджер позвонит, чтобы подтвердить заказ</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="fs" id="fsAddress">
+          <legend class="fs__legend">Адрес доставки</legend>
+          <div class="grid">
+            <div class="field w-3"><label class="field__label" for="f-city">Город <span class="req" aria-hidden="true">*</span></label>
+              <div class="ac__box"><input class="input" id="f-city" name="city" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="ac-city" required aria-describedby="e-city"><div class="ac__list" id="ac-city" role="listbox" aria-label="Подсказки: город" hidden></div></div>
+              <p class="field__err" id="e-city" hidden></p></div>
+            <div class="field w-3"><label class="field__label" for="f-street">Улица <span class="req" aria-hidden="true">*</span></label>
+              <div class="ac__box"><input class="input" id="f-street" name="street" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="ac-street" required aria-describedby="e-street"><div class="ac__list" id="ac-street" role="listbox" aria-label="Подсказки: улица" hidden></div></div>
+              <p class="field__err" id="e-street" hidden></p></div>
+            <div class="field half-m w-2"><label class="field__label" for="f-house">Дом <span class="req" aria-hidden="true">*</span></label><input class="input" id="f-house" name="house" type="text" autocomplete="off" required aria-describedby="e-house"><p class="field__err" id="e-house" hidden></p></div>
+            <div class="field half-m w-2"><label class="field__label" for="f-flat">Квартира</label><input class="input" id="f-flat" name="flat" type="text" autocomplete="off"></div>
+            <div class="w-2 private"><label class="check check--center"><input type="checkbox" id="f-private" name="private"><span>Частный дом</span></label></div>
+            <div class="field w-3"><label class="field__label" for="f-zip">Индекс <span class="req" aria-hidden="true">*</span></label><input class="input" id="f-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="6 цифр" required aria-describedby="e-zip"><p class="field__err" id="e-zip" hidden></p></div>
+            <div class="field w-3"><label class="field__label" for="f-reserve">Номер резервирования <span class="opt">(необязательно)</span></label><input class="input" id="f-reserve" name="reserve" type="text" autocomplete="off"></div>
+          </div>
+        </fieldset>
+        <fieldset class="fs">
+          <legend class="fs__legend">Способ оплаты</legend>
+          <label class="pay-opt"><input type="radio" name="pay" value="cod" checked><span><b>Оплата при получении</b><span>Вы платите за посылку на почте, когда её получите</span></span></label>
+        </fieldset>
+      </form>
+      <aside class="co__aside">
+        <div class="parch co__card" id="orderCard">
+          <p class="cart__title">Ваш заказ</p>
+          <div data-cart="full"></div>
+          <p class="trust"><svg aria-hidden="true"><use href="#i-shield"/></svg><span><b>Без риска и обязательств.</b> Сейчас платить не нужно — вы платите за посылку только при получении.</span></p>
+          <div class="alert alert--error" id="submitError" role="alert" hidden><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Не удалось отправить заказ. Позвоните <a href="tel:88002509505">8 (800) 250-95-05</a></span></div>
+          <button type="submit" form="orderForm" class="btn btn--red btn--block" id="orderSubmit">Оформить заказ</button>
+          <p class="support">Вопросы по заказу: <a href="tel:88002509505">8 (800) 250-95-05</a></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ СПАСИБО ═════════════════════════════════════════════════════ -->
+<section class="step page" data-view="thanks" aria-labelledby="t-thanks" hidden>
+  <div class="rosette" aria-hidden="true"><svg><use href="#rosette-sym"/></svg></div>
+  <div class="wrap ty">
+    <div id="thanksCoin" aria-hidden="true"></div>
+    <p class="kicker kicker--c">Заказ оформлен</p>
+    <h1 class="ty__title" id="t-thanks" tabindex="-1">Спасибо! Ваш заказ принят</h1>
+    <p class="ty__lead">Сейчас платить ничего не нужно.</p>
+    <div class="parch ty__card">
+      <p class="cart__title" style="font-size:28px;margin-bottom:18px">Что будет дальше</p>
+      <ol class="nextlist">
+        <li><span><b>Вам позвонит менеджер</b><span id="thanksPhone">чтобы подтвердить заказ.</span></span></li>
+        <li><span><b>Посылку доставит Почта России</b>на адрес, который вы указали.</span></li>
+        <li><span><b>Оплата при получении</b>Вы платите за посылку на почте, когда её получите.</span></li>
+      </ol>
+      <div class="ty__order"><p class="cart__title">Ваш заказ</p><div data-cart="thanks"></div><p class="ty__addr" id="thanksAddr"></p></div>
+    </div>
+    <div class="ty__support"><span>Остались вопросы? Звонок бесплатный</span><a href="tel:88002509505"><svg aria-hidden="true"><use href="#i-phone"/></svg>8 (800) 250-95-05</a></div>
+  </div>
+</section>
+
+</main>
+
+<!-- Летящая медаль (десктоп): одна на всю страницу шага 1 -->
+<div class="flyer" id="flyer" aria-hidden="true" hidden>
+  <div class="lens"><div class="lens__clip"></div><div class="lens__ring"></div></div>
+</div>
+
+<section class="guar" aria-label="Гарантии">
+  <ul class="wrap guar__list">
+    <li class="guar__item"><span class="guar__ico"><svg aria-hidden="true"><use href="#i-shield"/></svg></span>Гарантия подлинности</li>
+    <li class="guar__item"><span class="guar__ico"><svg aria-hidden="true"><use href="#i-award"/></svg></span>Гарантия качества</li>
+    <li class="guar__item"><span class="guar__ico"><svg aria-hidden="true"><use href="#i-return"/></svg></span>Возврат 14 дней</li>
+    <li class="guar__item"><span class="guar__ico"><svg aria-hidden="true"><use href="#i-wallet"/></svg></span>Оплата при получении</li>
+  </ul>
+</section>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div><p class="ftr__org">ООО «Русский Монетный Двор»</p><p>109052, г. Москва, ул. Смирновская, д. 4, стр. 2</p><p class="ftr__req"><span class="nowrap">ОГРН 1267700003757</span> · <span class="nowrap">ИНН 9722111958</span> · <span class="nowrap">КПП 772201001</span></p></div>
+      <div class="ftr__tel"><a href="tel:88002509505">8 (800) 250-95-05<span>заказ</span></a><a href="tel:84952325005">8 (495) 232-50-05<span>сервис</span></a><a class="ftr__mail" href="mailto:order@rusdvor.ru">order@rusdvor.ru</a></div>
+      <nav class="ftr__docs" aria-label="Документы">
+        <button type="button" class="link" data-doc="policy">Политика обработки персональных данных</button>
+        <button type="button" class="link" data-doc="consent">Согласие на обработку персональных данных</button>
+        <button type="button" class="link" data-doc="terms">Условия заказа товара</button>
+      </nav>
+    </div>
+    <p class="ftr__copy">© 2026 ООО «Русский Монетный Двор»</p>
+  </div>
+</footer>
+
+<div class="dock" id="dock" hidden>
+  <div class="dock__row" data-dock="medal"><div class="dock__price"><b>1&nbsp;495&nbsp;₽</b><s><span class="vh">Старая цена: </span>2&nbsp;990&nbsp;₽</s></div><button type="button" class="btn btn--gold" id="dockMedal">Заказать</button></div>
+  <div class="dock__pair" data-dock="offer"><button type="button" class="btn btn--gold" data-offer="yes">Да, добавить в&nbsp;заказ</button><button type="button" class="btn btn--parch" data-offer="no">Нет, спасибо</button></div>
+</div>
+
+<dialog class="modal" id="docModal" aria-labelledby="docTitle">
+  <button type="button" class="modal__x" data-close aria-label="Закрыть"><svg><use href="#i-x"/></svg></button>
+  <div class="modal__body"><h2 class="title" id="docTitle"></h2><div class="modal__doc" id="docBody"></div><div class="modal__btns"><button type="button" class="btn btn--line btn--block" data-close>Закрыть</button></div></div>
+</dialog>
+<dialog class="modal" id="deliveryModal" aria-labelledby="deliveryTitle" aria-describedby="deliveryText">
+  <button type="button" class="modal__x" data-close aria-label="Закрыть"><svg><use href="#i-x"/></svg></button>
+  <div class="modal__body">
+    <div class="modal__ico" aria-hidden="true"><svg><use href="#i-truck"/></svg></div>
+    <h2 class="title" id="deliveryTitle">Доставка недоступна</h2>
+    <p class="modal__text" id="deliveryText">К сожалению, сейчас логистические партнёры временно не осуществляют доставку в ваш регион. Приносим свои извинения.</p>
+    <div class="modal__btns"><button type="button" class="btn btn--red btn--block" id="deliveryEdit" autofocus>Изменить адрес</button><a class="btn btn--line btn--block" href="tel:88002509505">Позвонить 8 (800) 250-95-05</a></div>
+  </div>
+</dialog>
+
+<script>
+(() => {
+'use strict';
+
+/* ═══ Данные. Всё в квадратных скобках — заглушки до получения контента ═══ */
+const PRODUCT = { name: 'Медаль «Копейка Петра I»', price: 1495, oldPrice: 2990, thumb: 'assets/kopeyka-avers.webp' };
+const SHIPPING = 399;
+const LOREM = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+  'Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla, vestibulum id ligula porta felis euismod semper.',
+  'Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.',
+  'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.',
+  'Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.',
+  'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue.'
+];
+const OFFERS = [
+  { id: 'offer-1', title: '[Коллекция 1 — название уточнить]', price: null, oldPrice: '[старая цена]', imageLabel: '[Изображение набора — коллекция 1]', text: LOREM.slice(0, 3), gifts: ['[Подарок 1 — уточнить]', '[Подарок 2 — уточнить]', '[Подарок 3 — уточнить]'] },
+  { id: 'offer-2', title: '[Коллекция 2 — название уточнить]', price: null, oldPrice: null, imageLabel: '[Изображение коллекции — коллекция 2]', text: LOREM.slice(0, 6), gifts: ['[Подарок 1 — уточнить]', '[Подарок 2 — уточнить]'] }
+];
+const DOCS = {
+  terms:   { title: 'Условия заказа товара', body: '[Текст условий заказа — предоставит юридический отдел]' },
+  policy:  { title: 'Политика обработки персональных данных', body: '[Текст политики обработки персональных данных — предоставит юридический отдел]' },
+  consent: { title: 'Согласие на обработку персональных данных', body: '[Текст согласия на обработку персональных данных — предоставит юридический отдел]' }
+};
+const CITIES = [['Москва',''],['Санкт-Петербург',''],['Тверь','Тверская обл.'],['Тула','Тульская обл.'],['Тюмень','Тюменская обл.'],['Томск','Томская обл.'],['Торжок','Тверская обл.'],['Мытищи','Московская обл.'],['Можайск','Московская обл.'],['Мурманск','Мурманская обл.'],['Новосибирск','Новосибирская обл.'],['Нижний Новгород','Нижегородская обл.'],['Екатеринбург','Свердловская обл.'],['Казань','Республика Татарстан'],['Самара','Самарская обл.'],['Ростов-на-Дону','Ростовская обл.'],['Краснодар','Краснодарский край'],['Воронеж','Воронежская обл.'],['Ярославль','Ярославская обл.'],['Владимир','Владимирская обл.'],['Рязань','Рязанская обл.'],['Калуга','Калужская обл.'],['Смоленск','Смоленская обл.'],['Сочи','Краснодарский край']];
+const STREETS = ['ул. Советская','ул. Ленина','ул. Мира','ул. Садовая','ул. Молодёжная','ул. Гагарина','ул. Пушкина','ул. Лесная','ул. Центральная','ул. Школьная','ул. Смоленская','Советский пр-т','ул. Солнечная','ул. Строителей'];
+
+/* ═══ Состояние и утилиты ═══ */
+const S = { view: 'medal', lead: { first: '', last: '', email: '', consent: false }, decisions: [null, null], addr: { phone: '', city: '', street: '', house: '', flat: '', private: false, zip: '', reserve: '' }, submitted: false };
+const params = new URLSearchParams(location.search);
+const SHOT = params.get('shot');
+const DEMO = { outcome: params.get('outcome') || 'ok' };
+const UTM = {}; params.forEach((v, k) => { if (k.startsWith('utm_')) UTM[k] = v; });
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (SHOT) { document.documentElement.classList.add('is-shot'); document.querySelectorAll('img[loading="lazy"]').forEach(i => { i.loading = 'eager'; }); }
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const nbsp = ' ';
+const money = n => typeof n === 'number' ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, nbsp) + nbsp + '₽' : n;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const store = { get(k) { try { return JSON.parse(sessionStorage.getItem(k)); } catch (e) { return null; } }, set(k, v) { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+window.dataLayer = window.dataLayer || [];
+const track = (event, data) => window.dataLayer.push(Object.assign({ event }, data || {}));
+
+/* ═══ API-заглушки: заменить на реальные вызовы CRM ═══ */
+const api = {
+  sendLead() { track('rmd_lead'); return Promise.resolve(); },   // TODO: POST лида в CRM
+  submitOrder() {   // TODO: POST заказа в CRM. «Регион недоступен» → { code: 'DELIVERY_UNAVAILABLE' }
+    return new Promise((resolve, reject) => {
+      if (DEMO.outcome === 'pending') return;
+      setTimeout(() => {
+        if (DEMO.outcome === 'error') reject({ code: 'NETWORK' });
+        else if (DEMO.outcome === 'unavailable') reject({ code: 'DELIVERY_UNAVAILABLE' });
+        else resolve({ ok: true });
+      }, SHOT ? 0 : 1400);
+    });
+  }
+};
+
+/* ═══ Гильош: розетка из эпитрохоид, как гравировка на банкноте ═══ */
+(function rosette() {
+  const g = document.getElementById('rosette-g');
+  const curves = [[380, 71, 12, .5], [330, 53, 18, .35], [270, 41, 24, .3], [440, 23, 30, .22]];
+  let html = '';
+  curves.forEach(([R, r, k, op]) => {
+    const pts = [];
+    for (let i = 0; i <= 2400; i++) {
+      const t = i / 2400 * Math.PI * 2;
+      const rr = R + r * Math.cos(k * t);
+      const x = rr * Math.cos(t) + r * .35 * Math.cos((k + 1) * t);
+      const y = rr * Math.sin(t) + r * .35 * Math.sin((k + 1) * t);
+      pts.push(x.toFixed(1) + ' ' + y.toFixed(1));
+    }
+    html += `<path opacity="${op}" d="M${pts.join('L')}Z"/>`;
+  });
+  for (let i = 0; i < 48; i++) { const a = i / 48 * Math.PI * 2; html += `<ellipse opacity=".12" rx="210" ry="60" transform="rotate(${(a * 180 / Math.PI).toFixed(1)})"/>`; }
+  g.innerHTML = html;
+})();
+
+/* ═══ 3D-медаль: CSS 3D, две стороны и гурт из тонких сегментов ═══ */
+class Coin {
+  constructor(host) {
+    this.root = document.getElementById('coinTpl').content.firstElementChild.cloneNode(true);
+    host.appendChild(this.root);
+    this.body = $('.coin__body', this.root); this.edge = $('.coin__edge', this.root); this.shadow = $('.coin__shadow', this.root); this.sheens = $$('.coin__sheen', this.root);
+    this.ry = 0; this.rx = 8; this.d = 0;
+    new ResizeObserver(() => this.build()).observe(this.root); this.build();
+  }
+  build() {
+    const d = this.root.offsetWidth; if (!d || Math.abs(d - this.d) < 1) return;
+    this.d = d;
+    const r = d / 2, t = Math.max(7, d * .075), N = 72, seg = (2 * Math.PI * r) / N + 1.2;
+    $('.coin__face--front', this.root).style.transform = `translateZ(${t / 2}px)`;
+    $('.coin__face--back', this.root).style.transform = `rotateY(180deg) translateZ(${t / 2}px)`;
+    let html = '';
+    for (let i = 0; i < N; i++) {
+      const a = i * 360 / N, rad = a * Math.PI / 180;
+      const l = Math.round(38 + Math.max(0, -(Math.cos(rad) * .62 + Math.sin(rad) * .78)) * 48);
+      html += `<i style="width:${t}px;height:${seg}px;margin:${-seg / 2}px 0 0 ${-t / 2}px;background:linear-gradient(90deg,hsl(42 22% ${l - 10}%),hsl(44 30% ${l + 6}%) 50%,hsl(42 22% ${l - 12}%));transform:rotateZ(${a}deg) translateX(${r - 1}px) rotateY(90deg)"></i>`;
+    }
+    this.edge.innerHTML = html;
+  }
+  set(ry, rx) {
+    this.ry = ry; this.rx = rx;
+    this.body.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+    const n = ((ry % 360) + 360) % 360;
+    this.sheens.forEach(s => s.style.setProperty('--sheen', (100 - ((n + 40) % 180) / 180 * 100) + '%'));
+    this.shadow.style.setProperty('--shadow-x', (.55 + .45 * Math.abs(Math.cos(n * Math.PI / 180))).toFixed(3));
+    return n > 90 && n < 270 ? 1 : 0;
+  }
+}
+/* Лупа: медаль в круглом окне; zoom > 1 — крупный план точки (fx, fy) */
+function lensApply(lens, coin, st) {
+  const D = lens.offsetWidth;
+  const zk = clamp((st.zoom - 1) / .5, 0, 1);
+  lens.style.setProperty('--clip', lerp(150, 50, zk) + '%');
+  lens.style.setProperty('--ring', zk.toFixed(3));
+  coin.root.style.transform = `translate(${-st.fx * D * st.zoom}px, ${-st.fy * D * st.zoom}px) scale(${st.zoom})`;
+  coin.shadow.style.opacity = (1 - zk).toFixed(3);
+  $('.coin__glow', coin.root).style.opacity = (1 - zk).toFixed(3);
+  return coin.set(st.ry, st.rx);
+}
+function makeLens(host) {
+  const lens = document.createElement('div'); lens.className = 'lens';
+  lens.innerHTML = '<div class="lens__clip"></div><div class="lens__ring"></div>';
+  host.appendChild(lens);
+  const coin = new Coin($('.lens__clip', lens));
+  return { lens, coin };
+}
+const slotState = el => ({ ry: +(el.dataset.ry || 0), rx: +(el.dataset.rx || 0), zoom: +(el.dataset.zoom || 1), fx: +(el.dataset.fx || 0), fy: +(el.dataset.fy || 0), scale: +(el.dataset.scale || 1), spin: +(el.dataset.spin || 0) });
+
+/* ═══ Режимы показа медали на шаге 1 ═══
+   Десктоп: одна медаль летит от слота к слоту при прокрутке (переворачивается, превращается в лупу).
+   Телефон, снимки и «уменьшенное движение»: в каждом слоте своя медаль, в первом экране — живая. */
+const slots = $$('[data-slot]');
+const flyer = $('#flyer');
+const mqDesk = window.matchMedia('(min-width: 1024px)');
+const hero = { side: 0, sideAnim: null, drag: 0, dragVel: 0, pausedUntil: 0, cycle: 0 };
+let mode = null, fly = null, statics = [];
+
+function useFlying() { return mqDesk.matches && !SHOT && !reduceMotion; }
+function setupCoins() {
+  const next = useFlying() ? 'fly' : 'static';
+  if (next === mode) return;
+  mode = next;
+  statics.forEach(s => s.host.remove()); statics = [];
+  if (mode === 'fly') {
+    flyer.hidden = false;
+    if (!fly) { const clip = $('.lens__clip', flyer); fly = { lens: $('.lens', flyer), coin: new Coin(clip) }; }
+  } else {
+    flyer.hidden = true;
+    slots.forEach(el => {
+      const host = document.createElement('div'); host.className = 'slot__static';
+      el.appendChild(host);
+      const L = makeLens(host);
+      const st = slotState(el);
+      if (SHOT && el.dataset.slot === 'hero') st.ry = -28;
+      statics.push({ host, el, st, ...L });
+      lensApply(L.lens, L.coin, st);
+    });
+  }
+}
+function heroSideOffset(now) {
+  if (hero.sideAnim) {
+    const p = clamp((now - hero.sideAnim.t0) / hero.sideAnim.dur, 0, 1);
+    hero.sideOff = lerp(hero.sideAnim.from, hero.sideAnim.to, ease(p));
+    if (p >= 1) hero.sideAnim = null;
+  }
+  return hero.sideOff || 0;
+}
+function flipHero(to, dur) {
+  const now = performance.now(), cur = hero.sideOff || 0;
+  const base = to ? 180 : 0, k = Math.round((cur - base) / 360);
+  hero.sideAnim = { from: cur, to: base + k * 360, t0: now, dur: dur || 900 };
+  hero.side = to;
+}
+function flipHeroNext() { const cur = hero.sideOff || 0; hero.sideAnim = { from: cur, to: cur + 180, t0: performance.now(), dur: 1600 }; hero.side = 1 - hero.side; }
+
+// Кадр: положение летящей медали между слотами
+function frameFly(now) {
+  const vh = innerHeight, sy = scrollY, c = sy + vh / 2;
+  const D = fly.lens.offsetWidth || 400;
+  const K = slots.map(el => {
+    const r = el.getBoundingClientRect(), st = slotState(el);
+    const top = r.top + sy, bottom = r.bottom + sy, cx = r.left + r.width / 2;
+    const half = Math.min((r.bottom - r.top) / 2, vh / 2);
+    return { el, st, cx, a: top + half, b: bottom - half };
+  });
+  let pos, st, inHero = false;
+  const wobble = Math.sin(now / 1200) * 14;
+  const stAt = (k, p) => Object.assign({}, k.st, { ry: k.st.ry + k.st.spin * p });
+  if (c <= K[0].b) { pos = { x: K[0].cx, y: Math.max(c, K[0].a) }; st = stAt(K[0], 0); inHero = true; }
+  else if (c >= K[K.length - 1].a) { const k = K[K.length - 1]; pos = { x: k.cx, y: Math.min(c, k.b) }; st = stAt(k, 0); }
+  else {
+    for (let i = 0; i < K.length; i++) {
+      const k = K[i];
+      if (c >= k.a && c <= k.b) { pos = { x: k.cx, y: c }; st = stAt(k, k.b > k.a ? (c - k.a) / (k.b - k.a) : 0); break; }
+      const n = K[i + 1];
+      if (n && c > k.b && c < n.a) {
+        const t = ease((c - k.b) / (n.a - k.b));
+        const s1 = stAt(k, 1), s2 = stAt(n, 0);
+        s2.ry += 360 * Math.round((s1.ry - s2.ry) / 360);   // поворот по кратчайшему пути
+        pos = { x: lerp(k.cx, n.cx, t), y: lerp(k.b, n.a, t) };
+        // когда медаль уходит в лупу — сначала «влетает» без увеличения, потом приближает
+        st = { ry: lerp(s1.ry, s2.ry, t), rx: lerp(s1.rx, s2.rx, t), scale: lerp(s1.scale, s2.scale, t),
+               zoom: lerp(s1.zoom, s2.zoom, s2.zoom > s1.zoom ? t * t * t : 1 - (1 - t) * (1 - t) * (1 - t)), fx: lerp(s1.fx, s2.fx, t), fy: lerp(s1.fy, s2.fy, t) };
+        break;
+      }
+    }
+  }
+  // Первый экран: покачивание, переворот раз в ~5 с, поворот пальцем
+  const hOff = heroSideOffset(now);
+  if (inHero) {
+    if (!reduceMotion && now > hero.pausedUntil && !hero.dragging) {
+      hero.cycle += 16;
+      if (hero.cycle > 5200) { hero.cycle = 0; flipHeroNext(); }
+    }
+    if (!hero.dragging) { hero.drag *= .95; }
+  }
+  const heroW = c <= K[0].b ? 1 : clamp(1 - (c - K[0].b) / 300, 0, 1);
+  const ry = st.ry + (hOff + hero.drag + wobble) * heroW + (st.zoom > 1.05 ? 0 : wobble * .4 * (1 - heroW));
+  const scale = st.scale || 1;
+  fly.lens.style.width = fly.lens.style.height = '';
+  flyer.style.transform = `translate(${pos.x - D / 2}px, ${pos.y - sy - D / 2}px) scale(${scale})`;
+  flyer.classList.toggle('is-drag', inHero);
+  const side = lensApply(fly.lens, fly.coin, { ry, rx: st.rx + (inHero ? Math.sin(now / 1700) * 3 : 0), zoom: st.zoom, fx: st.fx, fy: st.fy });
+  setSideButtons(side);
+}
+// Кадр в статичном режиме: живой только первый экран
+function frameStatic(now) {
+  const h = statics.find(s => s.el.dataset.slot === 'hero'); if (!h) return;
+  if (SHOT) return;
+  const hOff = heroSideOffset(now);
+  if (!reduceMotion && now > hero.pausedUntil && !hero.dragging) { hero.cycle += 16; if (hero.cycle > 5200) { hero.cycle = 0; flipHeroNext(); } }
+  if (!hero.dragging) hero.drag *= .95;
+  const wob = reduceMotion ? 0 : Math.sin(now / 1200) * 16;
+  const side = lensApply(h.lens, h.coin, Object.assign({}, h.st, { ry: h.st.ry + hOff + hero.drag + wob }));
+  setSideButtons(side);
+}
+let lastSide = -1;
+function setSideButtons(side) { if (side === lastSide) return; lastSide = side; $$('.side-btn').forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.side) === side))); }
+function loop(now) {
+  if (S.view === 'medal') { if (mode === 'fly') frameFly(now); else frameStatic(now); }
+  if (thanksCoin && S.view === 'thanks' && !SHOT && !reduceMotion) thanksCoin.set(now * .03 % 360, 8);
+  requestAnimationFrame(loop);
+}
+// Поворот пальцем / мышью в первом экране (горизонтальный жест; вертикальный — прокрутка страницы)
+function bindDrag(target) {
+  let sx = 0, sy = 0, lx = 0, decided = false, active = false;
+  target.addEventListener('pointerdown', e => { active = true; decided = false; sx = lx = e.clientX; sy = e.clientY; });
+  window.addEventListener('pointermove', e => {
+    if (!active) return;
+    if (!decided) {
+      if (Math.abs(e.clientX - sx) < 6 && Math.abs(e.clientY - sy) < 6) return;
+      decided = true;
+      if (Math.abs(e.clientY - sy) > Math.abs(e.clientX - sx)) { active = false; return; }
+      hero.dragging = true;
+    }
+    hero.drag += (e.clientX - lx) * .6; lx = e.clientX; hero.pausedUntil = performance.now() + 3500;
+  });
+  const end = () => { if (hero.dragging) { hero.sideOff = (hero.sideOff || 0) + hero.drag; hero.drag = 0; hero.side = (((hero.sideOff % 360) + 360) % 360) > 90 && (((hero.sideOff % 360) + 360) % 360) < 270 ? 1 : 0; } hero.dragging = false; active = false; };
+  window.addEventListener('pointerup', end); window.addEventListener('pointercancel', end);
+}
+let thanksCoin = null;
+function initCoins() {
+  setupCoins();
+  bindDrag(flyer); bindDrag($('[data-slot="hero"]'));
+  $$('.side-btn').forEach(b => b.addEventListener('click', () => { flipHero(Number(b.dataset.side)); hero.pausedUntil = performance.now() + 6000; hero.cycle = 0; }));
+  thanksCoin = new Coin($('#thanksCoin')); thanksCoin.set(-28, 8);
+  (mqDesk.addEventListener ? mqDesk.addEventListener('change', setupCoins) : mqDesk.addListener(setupCoins));
+  if (mode === 'fly') frameFly(performance.now());
+  if (!SHOT) requestAnimationFrame(loop);
+}
+
+/* Появление блоков */
+function initReveal() {
+  const els = $$('.reveal');
+  if (SHOT || reduceMotion || !('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('is-in')); return; }
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(e => io.observe(e));
+}
+
+/* ═══ Корзина ═══ */
+function cartItems() {
+  const items = [{ name: PRODUCT.name, price: PRODUCT.price, kind: 'medal' }];
+  OFFERS.forEach((o, i) => { if (S.decisions[i] === true) items.push({ name: o.title, price: o.price, kind: 'offer', i }); });
+  return items;
+}
+function plural(n, a, b, c) { const x = n % 10, y = n % 100; if (x === 1 && y !== 11) return a; if (x >= 2 && x <= 4 && (y < 10 || y >= 20)) return b; return c; }
+function renderCart(el, opts) {
+  const items = cartItems(); let known = SHIPPING, tbd = 0;
+  items.forEach(it => { if (typeof it.price === 'number') known += it.price; else tbd++; });
+  let html = opts.title ? `<p class="cart__title">В вашем заказе <span>${items.length} ${plural(items.length, 'товар', 'товара', 'товаров')}</span></p>` : '';
+  html += '<ul class="lines">';
+  items.forEach(it => {
+    const ico = it.kind === 'medal' ? `<img src="${PRODUCT.thumb}" alt="" width="40" height="40">` : '<span class="line__ico" aria-hidden="true"><svg><use href="#i-box"/></svg></span>';
+    const price = typeof it.price === 'number' ? `<span class="line__price">${money(it.price)}</span>` : '<span class="line__price line__price--tbd">Цена уточняется</span>';
+    html += `<li class="line${opts.flashIndex != null && it.i === opts.flashIndex ? ' line--new' : ''}"><span class="line__name">${ico}<span>${esc(it.name)}</span></span>${price}</li>`;
+  });
+  html += `<li class="line line--muted"><span class="line__name"><span class="line__ico" aria-hidden="true"><svg><use href="#i-truck"/></svg></span><span>Упаковка и отправка</span></span><span class="line__price">${money(SHIPPING)}</span></li></ul>`;
+  html += `<div class="total"><span class="total__label">${opts.totalLabel || 'Итого'}</span><span class="total__val"><b>${money(known)}</b>${tbd ? '<small>+ цена предложения уточняется</small>' : ''}</span></div>`;
+  el.innerHTML = html;
+}
+
+/* ═══ Прогресс ═══ */
+function renderProgress() {
+  const v = S.view, stage = v === 'medal' ? 1 : v.startsWith('offer') ? 2 : 3, done = v === 'thanks';
+  const lines = { 'medal': [0, 0], 'offer-0': [100, 35], 'offer-1': [100, 75], 'checkout': [100, 100], 'thanks': [100, 100] }[v];
+  $$('.progress__item').forEach((li, idx) => {
+    const n = idx + 1, isDone = done || n < stage;
+    li.classList.toggle('is-done', isDone); li.classList.toggle('is-current', !isDone && n === stage);
+    li.querySelector('.progress__num').innerHTML = isDone ? '<svg aria-hidden="true"><use href="#i-check"/></svg>' : String(n);
+    const ln = li.querySelector('.progress__line span'); if (ln) ln.style.width = (lines[idx] || 0) + '%';
+    if (!isDone && n === stage) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
+  });
+  const notes = { 'medal': ['Шаг 1 из 3', 'Всего 3 шага'], 'offer-0': ['Шаг 2 из 3', 'Предложение 1 из 2'], 'offer-1': ['Шаг 2 из 3', 'Предложение 2 из 2'], 'checkout': ['Шаг 3 из 3', 'Последний шаг'], 'thanks': ['Заказ оформлен', ''] }[v];
+  $('#progressNote').innerHTML = `<b>${notes[0]}</b><span>${notes[1]}</span>`;
+}
+
+/* ═══ Навигация ═══ */
+function showView(view, opts) {
+  opts = opts || {};
+  if (S.submitted && view !== 'thanks') view = 'thanks';
+  S.view = view;
+  const key = view.startsWith('offer') ? 'offer' : view;
+  $$('[data-view]').forEach(sec => { sec.hidden = sec.dataset.view !== key; });
+  flyer.hidden = !(key === 'medal' && mode === 'fly');
+  if (key === 'offer') renderOffer(Number(view.split('-')[1]), opts);
+  if (key === 'checkout') renderCart($('[data-cart="full"]'), { totalLabel: 'Итого' });
+  if (key === 'thanks') renderThanks();
+  renderProgress(); observeTarget();
+  if (opts.push !== false && !SHOT) { try { history.pushState({ view }, '', location.pathname + location.search); } catch (e) {} }
+  if (!SHOT) store.set('rmd-order-kopeyka-p1', S);
+  if (opts.scroll !== false) window.scrollTo(0, 0);
+  if (opts.focus !== false) { const h = $(`[data-view="${key}"] h1`); if (h) h.focus({ preventScroll: true }); }
+  track('rmd_view', { view });
+}
+window.addEventListener('popstate', e => showView((e.state && e.state.view) || 'medal', { push: false }));
+
+/* ═══ Валидация ═══ */
+function setError(input, msg) {
+  const err = document.getElementById('e-' + input.id.slice(2));
+  if (msg) { input.setAttribute('aria-invalid', 'true'); if (err) { err.innerHTML = `<svg aria-hidden="true"><use href="#i-alert"/></svg><span>${msg}</span>`; err.hidden = false; } }
+  else { input.removeAttribute('aria-invalid'); if (err) { err.hidden = true; err.innerHTML = ''; } }
+}
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const RULES = {
+  first: v => v.trim() ? '' : 'Укажите имя',
+  last: v => v.trim() ? '' : 'Укажите фамилию',
+  email: v => !v.trim() ? 'Укажите адрес эл. почты' : (EMAIL_RE.test(v.trim()) ? '' : 'Проверьте адрес почты'),
+  phone: v => { const d = v.replace(/\D/g, ''); return d.length <= 1 ? 'Укажите телефон' : (d.length === 11 ? '' : 'Проверьте номер: нужно 10 цифр после +7'); },
+  city: v => v.trim() ? '' : 'Укажите город',
+  street: v => v.trim() ? '' : 'Укажите улицу',
+  house: v => v.trim() ? '' : 'Укажите номер дома',
+  zip: v => /^\d{6}$/.test(v) ? '' : 'Введите 6 цифр индекса'
+};
+function validateInput(input) { const rule = RULES[input.name]; if (!rule || input.disabled) return true; const msg = rule(input.value); setError(input, msg); return !msg; }
+function wireLive(input) {
+  input.addEventListener('blur', () => { if (input.dataset.touched) validateInput(input); });
+  input.addEventListener('input', () => { input.dataset.touched = '1'; if (input.getAttribute('aria-invalid') === 'true') validateInput(input); });
+}
+function focusFirst(el) { el.scrollIntoView({ block: 'center', behavior: SHOT || reduceMotion ? 'auto' : 'smooth' }); el.focus({ preventScroll: true }); }
+
+/* ═══ Шаг 1 ═══ */
+const leadForm = $('#leadForm');
+const leadInputs = ['#f-first', '#f-last', '#f-email'].map(s => $(s));
+const consent = $('#f-consent');
+leadInputs.forEach(wireLive);
+function setConsentError(on) { $('#consentRow').classList.toggle('is-invalid', on); $('#e-consent').hidden = !on; if (on) consent.setAttribute('aria-invalid', 'true'); else consent.removeAttribute('aria-invalid'); }
+consent.addEventListener('change', () => { if (consent.checked) setConsentError(false); });
+function submitLead() {
+  let firstBad = null;
+  leadInputs.forEach(inp => { if (!validateInput(inp) && !firstBad) firstBad = inp; });
+  const ok = consent.checked; setConsentError(!ok);
+  if (firstBad) { focusFirst(firstBad); return false; }
+  if (!ok) { focusFirst(consent); return false; }
+  S.lead = { first: leadInputs[0].value.trim(), last: leadInputs[1].value.trim(), email: leadInputs[2].value.trim(), consent: true };
+  api.sendLead(Object.assign({}, S.lead, UTM));
+  showView('offer-0');
+  return true;
+}
+leadForm.addEventListener('submit', e => { e.preventDefault(); submitLead(); });
+function goOrder() {
+  $('#leadForm').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+  const empty = leadInputs.find(i => !i.value.trim()) || leadInputs[0];
+  setTimeout(() => empty.focus({ preventScroll: true }), reduceMotion ? 0 : 700);
+}
+$$('[data-go-order]').forEach(b => b.addEventListener('click', goOrder));
+$$('[data-go]').forEach(b => b.addEventListener('click', () => $(b.dataset.go).scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' })));
+$('#dockMedal').addEventListener('click', () => { if (leadInputs.every(i => i.value.trim()) && consent.checked) submitLead(); else goOrder(); });
+
+/* ═══ Шаги 2–3 ═══ */
+function renderOffer(i, opts) {
+  const o = OFFERS[i];
+  $('#t-offer').textContent = o.title;
+  $('#offerMedia').innerHTML = `<svg aria-hidden="true"><use href="#i-image"/></svg><b>${esc(o.imageLabel)}</b><small>PNG, прозрачный фон, от 1000×1000 px</small>`;
+  $('#offerMedia').setAttribute('role', 'img'); $('#offerMedia').setAttribute('aria-label', o.imageLabel);
+  const has = typeof o.price === 'number';
+  $('#offerPrice').innerHTML = `<span class="price__label">Цена предложения</span><div class="price"><span class="price__now${has ? '' : ' price__now--tbd'}">${has ? money(o.price) : 'Цена уточняется'}</span>` + (o.oldPrice ? `<s class="price__old"><span class="vh">Старая цена: </span>${esc(money(o.oldPrice))}</s>` : '') + '</div>';
+  $('#offerDesc').innerHTML = o.text.map(p => `<p>${esc(p)}</p>`).join('');
+  $('#offerGifts').innerHTML = o.gifts.map(g => `<li><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>${esc(g)}</span></li>`).join('');
+  $('#offerQ').textContent = `Добавить ${o.title} в заказ?`;
+  $('#offerFlash span').textContent = i === 0 ? 'Медаль «Копейка Петра I» добавлена в заказ. Перед оформлением — специальное предложение для вас.'
+    : (S.decisions[0] === true ? `${OFFERS[0].title} — добавлено в заказ. Ещё одно предложение, и переходим к доставке.` : 'Ещё одно предложение, и переходим к доставке.');
+  renderCart($('[data-cart="mini"]'), { title: true, totalLabel: 'Сумма', flashIndex: opts && opts.flashIndex });
+}
+function decide(yes) {
+  const i = Number(S.view.split('-')[1]);
+  S.decisions[i] = yes;
+  track(yes ? 'rmd_offer_accept' : 'rmd_offer_decline', { offer: OFFERS[i].id });
+  if (i === 0) showView('offer-1', { flashIndex: yes ? 0 : null }); else showView('checkout');
+}
+$$('[data-offer]').forEach(b => b.addEventListener('click', () => decide(b.dataset.offer === 'yes')));
+
+/* ═══ Шаг 4 ═══ */
+const orderForm = $('#orderForm');
+const phone = $('#f-phone'), city = $('#f-city'), street = $('#f-street'), house = $('#f-house'), flat = $('#f-flat'), priv = $('#f-private'), zip = $('#f-zip'), reserve = $('#f-reserve');
+[phone, city, street, house, zip].forEach(wireLive);
+function formatPhone(n) { let o = '+7 (' + n.slice(0, 3); if (n.length >= 3) o += ')'; if (n.length > 3) o += ' ' + n.slice(3, 6); if (n.length > 6) o += '-' + n.slice(6, 8); if (n.length > 8) o += '-' + n.slice(8, 10); return o; }
+function nationalDigits(value) {
+  let d = value.replace(/\D/g, '');
+  if (value.trim().indexOf('+7') === 0) d = d.slice(1);
+  else if (d.length === 11 && /^[78]/.test(d)) d = d.slice(1);
+  if (d.length > 10 && /^[78]/.test(d)) d = d.slice(1);
+  return d.slice(0, 10);
+}
+phone.addEventListener('focus', () => { if (!phone.value) { phone.value = '+7 ('; phone.dataset.d = ''; } });
+phone.addEventListener('blur', () => { if (!nationalDigits(phone.value)) { phone.value = ''; phone.dataset.d = ''; } });
+phone.addEventListener('input', e => {
+  const del = !!e.inputType && e.inputType.indexOf('delete') === 0;
+  let n = nationalDigits(phone.value);
+  if (del && n === (phone.dataset.d || '')) n = n.slice(0, -1);
+  phone.dataset.d = n; phone.value = n ? formatPhone(n) : (del ? '' : '+7 (');
+});
+zip.addEventListener('input', () => { zip.value = zip.value.replace(/\D/g, '').slice(0, 6); });
+priv.addEventListener('change', () => { flat.disabled = priv.checked; if (priv.checked) flat.value = ''; });
+const norm = s => s.toLowerCase().replace(/ё/g, 'е');
+function hl(text, q) { const i = norm(text).indexOf(norm(q)); if (!q || i < 0) return esc(text); return esc(text.slice(0, i)) + '<mark>' + esc(text.slice(i, i + q.length)) + '</mark>' + esc(text.slice(i + q.length)); }
+function autocomplete(input, list, source) {
+  let items = [], active = -1;
+  function close() { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; }
+  function open(q) {
+    items = source(q); if (!q.trim()) { close(); return; }
+    list.innerHTML = !items.length ? '<p class="ac__empty">Ничего не нашли — проверьте написание или продолжайте ввод</p>'
+      : items.map((it, k) => `<button type="button" class="ac__opt" role="option" id="${list.id}-${k}" aria-selected="false" tabindex="-1" data-k="${k}"><span class="ac__main">${hl(it.main, q)}</span>${it.sub ? `<span class="ac__sub">${esc(it.sub)}</span>` : ''}</button>`).join('') + '<p class="ac__foot" aria-hidden="true">Выберите из списка</p>';
+    list.hidden = false; input.setAttribute('aria-expanded', 'true'); active = -1;
+  }
+  function pick(k) { const it = items[k]; if (!it) return; input.value = it.value; close(); input.dataset.touched = '1'; validateInput(input); input.dispatchEvent(new CustomEvent('ac-pick', { detail: it })); }
+  function setActive(k) { const o = $$('.ac__opt', list); if (!o.length) return; active = (k + o.length) % o.length; o.forEach((x, j) => x.setAttribute('aria-selected', String(j === active))); input.setAttribute('aria-activedescendant', o[active].id); o[active].scrollIntoView({ block: 'nearest' }); }
+  input.addEventListener('input', () => open(input.value));
+  input.addEventListener('keydown', e => {
+    if (list.hidden) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+    else if (e.key === 'Enter' && active >= 0) { e.preventDefault(); pick(active); }
+    else if (e.key === 'Escape') close();
+  });
+  input.addEventListener('blur', () => setTimeout(close, 150));
+  list.addEventListener('mousedown', e => e.preventDefault());
+  list.addEventListener('click', e => { const b = e.target.closest('.ac__opt'); if (b) pick(Number(b.dataset.k)); });
+  return { open, close };
+}
+const acCity = autocomplete(city, $('#ac-city'), q => { const n = norm(q.trim()); return CITIES.filter(([c]) => norm(c).startsWith(n)).slice(0, 5).map(([c, r]) => ({ main: c, sub: r, value: c })); });
+const acStreet = autocomplete(street, $('#ac-street'), q => { const n = norm(q.trim()), c = city.value.trim(); return STREETS.filter(s => norm(s).split(/[\s.-]+/).some(w => w.startsWith(n)) || norm(s).startsWith(n)).slice(0, 5).map(s => ({ main: s, sub: c ? 'г. ' + c : '', value: s })); });
+city.addEventListener('ac-pick', () => street.focus());
+street.addEventListener('ac-pick', () => house.focus());
+function readAddr() { S.addr = { phone: phone.value, city: city.value.trim(), street: street.value.trim(), house: house.value.trim(), flat: flat.value.trim(), private: priv.checked, zip: zip.value, reserve: reserve.value.trim() }; }
+function setSubmitting(on) {
+  const btn = $('#orderSubmit'); btn.disabled = on; btn.setAttribute('aria-busy', String(on));
+  btn.innerHTML = on ? '<span class="spinner" aria-hidden="true"></span>Отправляем заказ…' : 'Оформить заказ';
+  $('#fsContacts').disabled = on; $('#fsAddress').disabled = on;
+}
+function submitOrder() {
+  $('#submitError').hidden = true;
+  let firstBad = null;
+  [phone, city, street, house, zip].forEach(inp => { if (!validateInput(inp) && !firstBad) firstBad = inp; });
+  if (firstBad) { focusFirst(firstBad); return; }
+  readAddr(); setSubmitting(true); track('rmd_order_submit');
+  api.submitOrder(Object.assign({ lead: S.lead, address: S.addr, items: cartItems(), shipping: SHIPPING, payment: 'cod' }, UTM)).then(() => {
+    setSubmitting(false); S.submitted = true; track('rmd_order_success'); showView('thanks');
+  }).catch(err => {
+    setSubmitting(false);
+    if (err && err.code === 'DELIVERY_UNAVAILABLE') { openModal($('#deliveryModal')); track('rmd_delivery_unavailable'); }
+    else { $('#submitError').hidden = false; track('rmd_order_error'); }
+  });
+}
+orderForm.addEventListener('submit', e => { e.preventDefault(); submitOrder(); });
+$('#deliveryEdit').addEventListener('click', () => { closeModal($('#deliveryModal')); focusFirst(city); });
+function renderThanks() {
+  const name = S.lead.first;
+  $('#t-thanks').innerHTML = name ? `Спасибо, ${esc(name)}!<br><i>Ваш заказ принят</i>` : 'Спасибо!<br><i>Ваш заказ принят</i>';
+  $('#thanksPhone').textContent = S.addr.phone ? `по номеру ${S.addr.phone}, чтобы подтвердить заказ.` : 'чтобы подтвердить заказ.';
+  renderCart($('[data-cart="thanks"]'), { totalLabel: 'Итого к оплате при получении' });
+  const a = S.addr, parts = [a.zip, a.city, a.street, a.house && 'д. ' + a.house, !a.private && a.flat && 'кв. ' + a.flat].filter(Boolean);
+  $('#thanksAddr').innerHTML = parts.length ? `<b>Адрес доставки:</b> ${esc(parts.join(', '))}` : '';
+}
+
+/* ═══ Окна ═══ */
+let lastFocus = null;
+function openModal(dlg) { lastFocus = document.activeElement; if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', ''); updateDock(); }
+function closeModal(dlg) { if (typeof dlg.close === 'function') dlg.close(); else dlg.removeAttribute('open'); }
+$$('.modal').forEach(dlg => {
+  dlg.addEventListener('click', e => { if (e.target === dlg || e.target.closest('[data-close]')) closeModal(dlg); });
+  dlg.addEventListener('close', () => { updateDock(); if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true }); });
+});
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-doc]'); if (!b) return;
+  e.preventDefault();
+  const d = DOCS[b.dataset.doc]; $('#docTitle').textContent = d.title; $('#docBody').innerHTML = `<p>${esc(d.body)}</p>`;
+  openModal($('#docModal'));
+});
+
+/* ═══ Cookie ═══ */
+const cookie = $('#cookie');
+let cookieOk = false;
+try { cookieOk = localStorage.getItem('rmd-cookie') === '1'; } catch (e) {}
+if (params.get('cookie') === '0') cookieOk = true;
+if (params.get('cookie') === '1') cookieOk = false;
+cookie.hidden = cookieOk;
+$('#cookieOk').addEventListener('click', () => { cookie.hidden = true; try { localStorage.setItem('rmd-cookie', '1'); } catch (e) {} });
+
+/* ═══ Нижняя панель (телефон): только когда действие шага вне экрана ═══ */
+const dock = $('#dock');
+const mqMobile = window.matchMedia('(max-width: 1023px)');
+let visibleTargets = new Set(), inputFocused = false, io = null;
+function dockTargets() { if (S.view === 'medal') return [$('#heroCta'), leadForm]; if (S.view.startsWith('offer')) return [$('#offerDecision')]; return []; }
+function updateDock() {
+  const ts = dockTargets(), modalOpen = $$('.modal').some(d => d.open);
+  const show = ts.length > 0 && mqMobile.matches && visibleTargets.size === 0 && !inputFocused && !modalOpen && SHOT !== 'full';
+  dock.hidden = !show;
+  $$('[data-dock]', dock).forEach(el => { el.hidden = !(S.view === el.dataset.dock || (el.dataset.dock === 'offer' && S.view.startsWith('offer'))); });
+  document.body.classList.toggle('has-dock', show);
+  if (show) document.body.style.setProperty('--dock-h', dock.offsetHeight + 'px');
+}
+function observeTarget() {
+  if (io) io.disconnect();
+  visibleTargets = new Set();
+  const ts = dockTargets();
+  if (!ts.length || !('IntersectionObserver' in window)) { updateDock(); return; }
+  ts.forEach(t => visibleTargets.add(t));
+  io = new IntersectionObserver(en => { en.forEach(x => { if (x.isIntersecting) visibleTargets.add(x.target); else visibleTargets.delete(x.target); }); updateDock(); }, { threshold: 0 });
+  ts.forEach(t => io.observe(t));
+}
+const isText = el => el && el.matches && el.matches('input:not([type=checkbox]):not([type=radio]), textarea');
+document.addEventListener('focusin', e => { if (isText(e.target)) { inputFocused = true; updateDock(); } });
+document.addEventListener('focusout', () => setTimeout(() => { inputFocused = isText(document.activeElement); updateDock(); }, 50));
+(mqMobile.addEventListener ? mqMobile.addEventListener('change', updateDock) : mqMobile.addListener(updateDock));
+
+/* ═══ Состояния для макетов и ревью: ?state=… ═══ */
+const DEMO_LEAD = { first: 'Анна', last: 'Иванова', email: 'anna.ivanova@mail.ru' };
+const DEMO_ADDR = { phone: '+7 (912) 345-67-89', city: 'Тверь', street: 'ул. Советская', house: '12', flat: '', private: true, zip: '170100', reserve: '' };
+function fillLead(l, c) { leadInputs[0].value = l.first; leadInputs[1].value = l.last; leadInputs[2].value = l.email; consent.checked = !!c; S.lead = { first: l.first, last: l.last, email: l.email, consent: !!c }; }
+function fillAddr(a) { phone.value = a.phone; phone.dataset.d = nationalDigits(a.phone); city.value = a.city; street.value = a.street; house.value = a.house; priv.checked = !!a.private; flat.disabled = !!a.private; flat.value = a.private ? '' : a.flat; zip.value = a.zip; reserve.value = a.reserve; readAddr(); }
+const toOrder = () => window.scrollTo(0, $('#order').getBoundingClientRect().top + scrollY);
+const STATES = {
+  'medal': () => showView('medal', { push: false }),
+  'medal-form': () => { showView('medal', { push: false }); toOrder(); },
+  'medal-errors': () => { showView('medal', { push: false }); fillLead({ first: '', last: 'Иванова', email: 'anna.ivanova@mail' }, true); submitLead(); toOrder(); },
+  'medal-consent': () => { showView('medal', { push: false }); fillLead(DEMO_LEAD, false); submitLead(); toOrder(); },
+  'offer-1': () => { fillLead(DEMO_LEAD, true); showView('offer-0', { push: false }); },
+  'offer-2': () => { fillLead(DEMO_LEAD, true); S.decisions = [true, null]; showView('offer-1', { push: false }); },
+  'checkout': () => { fillLead(DEMO_LEAD, true); S.decisions = [true, false]; showView('checkout', { push: false }); },
+  'checkout-filled': () => { STATES['checkout'](); fillAddr(DEMO_ADDR); },
+  'checkout-errors': () => { STATES['checkout'](); fillAddr({ phone: '+7 (912) 345-6', city: 'Тверь', street: '', house: '12', flat: '5', private: false, zip: '1701', reserve: '' }); submitOrder(); window.scrollTo(0, 0); },
+  'checkout-city': () => { STATES['checkout'](); fillAddr({ phone: DEMO_ADDR.phone, city: 'Т', street: '', house: '', flat: '', private: false, zip: '', reserve: '' }); city.focus({ preventScroll: true }); acCity.open('Т'); },
+  'checkout-street': () => { STATES['checkout'](); fillAddr({ phone: DEMO_ADDR.phone, city: 'Тверь', street: 'Со', house: '', flat: '', private: false, zip: '', reserve: '' }); street.focus({ preventScroll: true }); acStreet.open('Со'); },
+  'checkout-sending': () => { DEMO.outcome = 'pending'; STATES['checkout-filled'](); submitOrder(); },
+  'checkout-error': () => { DEMO.outcome = 'error'; STATES['checkout-filled'](); submitOrder(); },
+  'checkout-unavailable': () => { DEMO.outcome = 'unavailable'; STATES['checkout-filled'](); submitOrder(); },
+  'thanks': () => { STATES['checkout-filled'](); S.submitted = true; showView('thanks', { push: false }); },
+  'doc': () => { showView('medal', { push: false }); $('.ftr__docs [data-doc="terms"]').click(); }
+};
+
+/* ═══ Старт ═══ */
+initCoins(); initReveal();
+const stateName = params.get('state');
+if (stateName && STATES[stateName]) STATES[stateName]();
+else {
+  const saved = !SHOT && store.get('rmd-order-kopeyka-p1');
+  if (saved && saved.view) { Object.assign(S, saved); if (S.lead.first) fillLead(S.lead, S.lead.consent); if (S.addr && S.addr.city) fillAddr(S.addr); }
+  showView(S.view, { push: false, focus: false });
+  try { history.replaceState({ view: S.view }, '', location.pathname + location.search); } catch (e) {}
+}
+})();
+</script>
+</body>
+</html>
