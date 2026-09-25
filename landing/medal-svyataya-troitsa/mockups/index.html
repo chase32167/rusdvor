@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Макеты — медаль «Святая Троица»</title>
+<style>
+:root {
+  --crimson: #9b092d; --gold: #c39a65; --gold-text: #7a5c33;
+  --cream: #f3eddf; --surface: #e8e0cf; --paper: #fffdf8; --border: #d6cbb8;
+  --ink: #1c1c1b; --ink-2: #3d3028; --ink-3: #66574a;
+  color-scheme: light;
+}
+* { box-sizing: border-box }
+body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: var(--ink); background: var(--cream) }
+a { color: var(--crimson) }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 0 16px }
+header { background: var(--paper); border-bottom: 1px solid var(--border); padding: 28px 0 24px }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-text) }
+h1 { font: 400 34px/1.15 Georgia, serif; margin: 6px 0 10px }
+h2 { font: 400 26px/1.2 Georgia, serif; margin: 0 0 4px }
+.lead { color: var(--ink-2); max-width: 760px; margin: 0 }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; font-size: 15px }
+.meta a { font-weight: 700 }
+nav.toc { position: sticky; top: 0; z-index: 5; background: rgba(243,237,223,.96); border-bottom: 1px solid var(--border); backdrop-filter: blur(6px) }
+nav.toc ol { display: flex; gap: 6px; overflow-x: auto; list-style: none; margin: 0; padding: 10px 0 }
+nav.toc a { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--paper); color: var(--ink-2); text-decoration: none; font-size: 14px; white-space: nowrap }
+nav.toc a:hover { border-color: var(--gold) }
+section.group { padding: 36px 0 8px }
+.group > .wrap > p { color: var(--ink-2); margin: 0 0 18px; max-width: 820px }
+.state { background: var(--paper); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 20px }
+.state__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; margin-bottom: 14px }
+.state__head h3 { margin: 0; font-size: 18px }
+.state__head h3 span { color: var(--gold-text); font-weight: 700; margin-right: 6px }
+.state__head p { margin: 4px 0 0; color: var(--ink-3); font-size: 15px; max-width: 760px }
+.state__head a { font-size: 14px; font-weight: 700; white-space: nowrap }
+.shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start }
+@media (min-width: 900px) { .shots { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr) } .shots.only-m { grid-template-columns: repeat(auto-fill, minmax(260px, 320px)) } }
+figure { margin: 0 }
+figure a { display: block; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: var(--cream); max-height: 900px; overflow-y: auto }
+figure img { display: block; width: 100%; height: auto }
+figcaption { font-size: 13px; color: var(--ink-3); margin-top: 6px }
+.notes { background: var(--paper); border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin: 28px 0 0 }
+.notes h2 { font-size: 22px; margin-bottom: 8px }
+.notes ul { margin: 0; padding-left: 20px; color: var(--ink-2) }
+.notes li + li { margin-top: 6px }
+footer { padding: 32px 0 48px; color: var(--ink-3); font-size: 14px }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">РМД · Digital · Макеты</p>
+    <h1>Лендинг медали «Святая Троица»</h1>
+    <p class="lead">Многошаговая страница заказа с оплатой при получении: медаль → два спецпредложения → оформление → «Спасибо». Все шаги и состояния, десктоп 1440 px и мобильный 390 px. Снимки сделаны с рабочего прототипа.</p>
+    <p class="meta">
+      <a href="../index.html">Открыть прототип</a>
+      <a href="../README.md">Описание и заметки для разработки</a>
+      <span>Мобильные снимки — с плотностью 2×</span>
+    </p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Разделы">
+  <div class="wrap">
+    <ol>
+      <li><a href="#s1">Шаг 1 — Медаль</a></li>
+      <li><a href="#s2">Шаги 2–3 — Предложения</a></li>
+      <li><a href="#s4">Шаг 4 — Оформление</a></li>
+      <li><a href="#s5">Окна и ошибки</a></li>
+      <li><a href="#s6">Спасибо</a></li>
+      <li><a href="#s7">Первый экран на телефоне</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="board"></main>
+
+<div class="wrap">
+  <div class="notes">
+    <h2>Ключевые решения</h2>
+    <ul>
+      <li><b>Прогресс из 3 этапов</b> вместо 5: «Медаль → Дополнительные предложения → Оформление». Внутри второго этапа подпись «Предложение 1 из 2 / 2 из 2», на оформлении — «Последний шаг». Полоса заполняется и внутри этапа.</li>
+      <li><b>Плашка cookie</b> стоит в потоке под шапкой, а не поверх страницы, — физически не может перекрыть кнопки ни на одном шаге.</li>
+      <li><b>Нижняя панель действия на телефоне</b> (шаг 1 и предложения) появляется только когда основная кнопка шага вне экрана; прячется, как только видна форма или кнопки, при открытой клавиатуре и при открытом окне.</li>
+      <li><b>«Нет, спасибо»</b> — сплошная кнопка того же размера, шрифта и веса, что и «Да, добавить в заказ»; обе и в блоке решения, и в нижней панели.</li>
+      <li><b>Согласие</b> по умолчанию не отмечено; попытка пройти без него — красная подсказка под чекбоксом и фокус на нём.</li>
+      <li><b>Документы</b> («Условия заказа», политика, согласие) открываются в окне — человек не уходит со страницы и не теряет заполненные поля.</li>
+      <li>Всё в квадратных скобках — заглушки: пэкшоты медали, названия, цены, тексты и подарки спецпредложений, тексты документов.</li>
+    </ul>
+  </div>
+</div>
+
+<footer><div class="wrap">ООО «Русский Монетный Двор» · Digital · сентябрь 2026</div></footer>
+
+<script>
+const GROUPS = [
+  { id: 's1', title: 'Шаг 1 — Медаль', text: 'Одна колонка на телефоне: изображение → цена → описание → форма → кнопка. На десктопе форма справа, рядом с медалью, и видна без прокрутки.', states: [
+    ['01', 'shag1-medal', 'По умолчанию', 'Аверс/реверс переключаются кнопками под медалью. Галочка согласия не стоит.', 'medal'],
+    ['02', 'shag1-oshibki-poley', 'Ошибки полей', 'Текст ошибки под полем, фокус на первом ошибочном поле. «Укажите имя», «Проверьте адрес почты».', 'medal-errors'],
+    ['03', 'shag1-bez-soglasiya', 'Попытка пройти без согласия', 'Поля заполнены верно, галочки нет — подсказка у чекбокса, чекбокс подсвечен.', 'medal-consent'],
+  ]},
+  { id: 's2', title: 'Шаги 2–3 — Спецпредложения', text: 'Один шаблон, два товара подряд. Контент — заглушки; у первого предложения показан вариант со старой ценой, у второго — без неё и с длинным текстом (6 абзацев). Мини-корзина справа (десктоп) или под блоком (телефон).', states: [
+    ['04', 'shag2-predlozhenie-1', 'Предложение 1 из 2', 'Подтверждение «Медаль добавлена в заказ» вверху. Две равные кнопки. В корзине — медаль и доставка.', 'offer-1'],
+    ['05', 'shag3-predlozhenie-2', 'Предложение 2 из 2', 'Первое предложение принято — отдельная строка в мини-корзине, «Цена уточняется». Текст длиннее, раскладка держится.', 'offer-2'],
+  ]},
+  { id: 's4', title: 'Шаг 4 — Оформление', text: 'Контакты → адрес → способ оплаты (одна опция, уже выбрана). Корзина с «Итого» и кнопкой — справа на десктопе и после формы на телефоне.', states: [
+    ['06', 'shag4-oformlenie', 'Пустая форма', 'В корзине: медаль, принятое предложение, «Упаковка и отправка 399 ₽», «Итого» крупно, строка доверия.', 'checkout'],
+    ['07', 'shag4-zapolneno-chastnyy-dom', 'Заполнено, отмечен «Частный дом»', 'Поле «Квартира» отключено и очищено.', 'checkout-filled'],
+    ['08', 'shag4-oshibki-poley', 'Ошибки полей', 'Неполный телефон, пустая улица, «Введите 6 цифр индекса».', 'checkout-errors'],
+    ['09', 'shag4-podskazki-gorod', 'Подсказки: город', 'Выпадающий список под полем, совпадение выделено, регион второй строкой. Строки по 52 px.', 'checkout-city'],
+    ['10', 'shag4-podskazki-ulica', 'Подсказки: улица', 'Подсказки с учётом выбранного города. Выбор — касанием или стрелками и Enter.', 'checkout-street'],
+    ['11', 'shag4-otpravka', 'Отправка заказа', 'Кнопка неактивна, крутится индикатор, «Отправляем заказ…», поля заблокированы.', 'checkout-sending'],
+  ]},
+  { id: 's5', title: 'Окна и ошибки', text: '', states: [
+    ['12', 'shag4-oshibka-otpravki', 'Ошибка отправки', '«Не удалось отправить заказ. Позвоните 8 (800) 250-95-05» над кнопкой, телефон кликабелен, кнопка снова активна.', 'checkout-error'],
+    ['13', 'okno-dostavka-nedostupna', 'Окно «Доставка недоступна»', 'Текст из ТЗ, кнопка «Изменить адрес» возвращает к полю «Город», вторая кнопка — звонок.', 'checkout-unavailable'],
+    ['15', 'okno-dokument', 'Окно документа', '«Условия заказа», политика и согласие открываются поверх страницы. Текст — заглушка.', 'doc'],
+  ]},
+  { id: 's6', title: 'Экран «Спасибо»', text: '', states: [
+    ['14', 'spasibo', 'Заказ оформлен', 'Что будет дальше: позвонит менеджер, посылку доставит Почта России, оплата при получении. Состав заказа, адрес, телефон поддержки.', 'thanks'],
+  ]},
+];
+const MOBILE_ONLY = { id: 's7', title: 'Первый экран на телефоне', text: 'Как страница выглядит сразу после перехода из рекламы (390 × 844). Нижняя панель держит основное действие в зоне большого пальца, пока форма или кнопки не на экране.', states: [
+  ['16', 'mob-pervyy-ekran-shag1', 'Шаг 1', '', 'medal'],
+  ['17', 'mob-pervyy-ekran-predlozhenie', 'Предложение', '', 'offer-1'],
+]};
+const board = document.getElementById('board');
+function fig(file, cap) {
+  return `<figure><a href="${file}" target="_blank" rel="noopener"><img src="${file}" alt="${cap}" loading="lazy"></a><figcaption>${cap}</figcaption></figure>`;
+}
+function group(g, mobileOnly) {
+  const items = g.states.map(([n, slug, title, desc, st]) => `
+    <article class="state" id="m${n}">
+      <div class="state__head">
+        <div><h3><span>${n}</span>${title}</h3>${desc ? `<p>${desc}</p>` : ''}</div>
+        <a href="../index.html?state=${st}" target="_blank" rel="noopener">Открыть в прототипе →</a>
+      </div>
+      <div class="shots${mobileOnly ? ' only-m' : ''}">
+        ${mobileOnly ? '' : fig(`${n}-${slug}-1440.png`, 'Десктоп 1440 px')}
+        ${fig(`${n}-${slug}-390.png`, 'Мобильный 390 px')}
+      </div>
+    </article>`).join('');
+  return `<section class="group" id="${g.id}"><div class="wrap"><h2>${g.title}</h2>${g.text ? `<p>${g.text}</p>` : ''}${items}</div></section>`;
+}
+board.innerHTML = GROUPS.map(g => group(g, false)).join('') + group(MOBILE_ONLY, true);
+</script>
+</body>
+</html>
